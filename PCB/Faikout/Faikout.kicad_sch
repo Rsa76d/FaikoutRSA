@@ -6,7 +6,6 @@
 	(paper "A4")
 	(title_block
 		(title "Faikout")
-		(rev "1")
 		(comment 1 "@TheRealRevK")
 		(comment 2 "www.me.uk")
 	)
