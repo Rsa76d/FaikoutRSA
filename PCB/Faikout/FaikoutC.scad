@@ -1,6 +1,6 @@
 // Generated case design for Faikout/Faikout.kicad_pcb
 // By https://github.com/revk/PCBCase
-// Generated 2026-06-11 13:31:32
+// Generated 2026-06-11 13:42:30
 // title:	Faikout
 // company:	Adrian Kennard, Andrews & Arnold Ltd
 //
@@ -52,22 +52,22 @@ module pcb(h=pcbthickness,r=0){linear_extrude(height=h)offset(r=r)polygon(points
 module C19(){translate([-0.250000,0.400000,1.200000])rotate([0,0,90.000000])children();}
 module part_C19(part=true,hole=false,block=false,punch=false)
 {
-translate([-0.250000,0.400000,1.200000])rotate([0,0,90.000000])m0(part,hole,block,punch,casetop); // RevK:C_0201 C_0201_0603Metric (back)
+translate([-0.250000,0.400000,1.200000])rotate([0,0,90.000000])m0(part,hole,block,punch,casetop); // C19
 };
 module R6(){translate([-0.800000,0.400000,1.200000])rotate([0,0,-90.000000])children();}
 module part_R6(part=true,hole=false,block=false,punch=false)
 {
-translate([-0.800000,0.400000,1.200000])rotate([0,0,-90.000000])m1(part,hole,block,punch,casetop); // RevK:R_0201 R_0201_0603Metric (back)
+translate([-0.800000,0.400000,1.200000])rotate([0,0,-90.000000])m1(part,hole,block,punch,casetop); // R6
 };
 module R1(){translate([3.300000,5.400000,1.200000])rotate([0,0,90.000000])children();}
 module part_R1(part=true,hole=false,block=false,punch=false)
 {
-translate([3.300000,5.400000,1.200000])rotate([0,0,90.000000])m1(part,hole,block,punch,casetop); // RevK:R_0201 R_0201_0603Metric (back)
+translate([3.300000,5.400000,1.200000])rotate([0,0,90.000000])m1(part,hole,block,punch,casetop); // R6
 };
 module C5(){translate([4.100000,0.900000,1.200000])rotate([0,0,180.000000])children();}
 module part_C5(part=true,hole=false,block=false,punch=false)
 {
-translate([4.100000,0.900000,1.200000])rotate([0,0,180.000000])m0(part,hole,block,punch,casetop); // RevK:C_0201 C_0201_0603Metric (back)
+translate([4.100000,0.900000,1.200000])rotate([0,0,180.000000])m0(part,hole,block,punch,casetop); // C19
 };
 module V4(){translate([-4.500000,-18.000000,1.200000])children();}
 module part_V4(part=true,hole=false,block=false,punch=false)
@@ -93,7 +93,7 @@ module part_V3(part=true,hole=false,block=false,punch=false)
 module C16(){translate([-1.250000,-3.500000,1.200000])rotate([0,0,-90.000000])children();}
 module part_C16(part=true,hole=false,block=false,punch=false)
 {
-translate([-1.250000,-3.500000,1.200000])rotate([0,0,-90.000000])m3(part,hole,block,punch,casetop); // RevK:C_0402 C_0402_1005Metric (back)
+translate([-1.250000,-3.500000,1.200000])rotate([0,0,-90.000000])m3(part,hole,block,punch,casetop); // C16
 };
 module D3(){translate([3.400000,6.700000,1.200000])rotate([0,0,-90.000000])children();}
 module part_D3(part=true,hole=false,block=false,punch=false)
@@ -103,17 +103,17 @@ translate([3.400000,6.700000,1.200000])rotate([0,0,-90.000000])m4(part,hole,bloc
 module R5(){translate([0.300000,0.400000,1.200000])rotate([0,0,90.000000])children();}
 module part_R5(part=true,hole=false,block=false,punch=false)
 {
-translate([0.300000,0.400000,1.200000])rotate([0,0,90.000000])m1(part,hole,block,punch,casetop); // RevK:R_0201 R_0201_0603Metric (back)
+translate([0.300000,0.400000,1.200000])rotate([0,0,90.000000])m1(part,hole,block,punch,casetop); // R6
 };
 module C7(){translate([2.580000,0.100000,1.200000])children();}
 module part_C7(part=true,hole=false,block=false,punch=false)
 {
-translate([2.580000,0.100000,1.200000])m0(part,hole,block,punch,casetop); // RevK:C_0201 C_0201_0603Metric (back)
+translate([2.580000,0.100000,1.200000])m0(part,hole,block,punch,casetop); // C19
 };
 module C6(){translate([-0.429742,6.600000,1.200000])children();}
 module part_C6(part=true,hole=false,block=false,punch=false)
 {
-translate([-0.429742,6.600000,1.200000])m0(part,hole,block,punch,casetop); // RevK:C_0201 C_0201_0603Metric (back)
+translate([-0.429742,6.600000,1.200000])m0(part,hole,block,punch,casetop); // C19
 };
 module D4(){translate([2.500000,6.700000,1.200000])rotate([0,0,90.000000])children();}
 module part_D4(part=true,hole=false,block=false,punch=false)
@@ -128,12 +128,12 @@ translate([0.100000,5.000000,1.200000])rotate([0,0,180.000000])m5(part,hole,bloc
 module C2(){translate([-1.250000,-7.100000,1.200000])rotate([0,0,90.000000])children();}
 module part_C2(part=true,hole=false,block=false,punch=false)
 {
-translate([-1.250000,-7.100000,1.200000])rotate([0,0,90.000000])m0(part,hole,block,punch,casetop); // RevK:C_0201 C_0201_0603Metric (back)
+translate([-1.250000,-7.100000,1.200000])rotate([0,0,90.000000])m0(part,hole,block,punch,casetop); // C19
 };
 module R3(){translate([-0.429742,7.200000,1.200000])rotate([0,0,180.000000])children();}
 module part_R3(part=true,hole=false,block=false,punch=false)
 {
-translate([-0.429742,7.200000,1.200000])rotate([0,0,180.000000])m1(part,hole,block,punch,casetop); // RevK:R_0201 R_0201_0603Metric (back)
+translate([-0.429742,7.200000,1.200000])rotate([0,0,180.000000])m1(part,hole,block,punch,casetop); // R6
 };
 module D2(){translate([2.500000,5.000000,1.200000])rotate([0,0,90.000000])children();}
 module part_D2(part=true,hole=false,block=false,punch=false)
@@ -152,7 +152,7 @@ translate([0.200000,-1.387500,1.200000])rotate([0,0,90.000000])m6(part,hole,bloc
 module C3(){translate([4.800000,-3.700000,1.200000])rotate([0,0,-90.000000])children();}
 module part_C3(part=true,hole=false,block=false,punch=false)
 {
-translate([4.800000,-3.700000,1.200000])rotate([0,0,-90.000000])m3(part,hole,block,punch,casetop); // RevK:C_0402 C_0402_1005Metric (back)
+translate([4.800000,-3.700000,1.200000])rotate([0,0,-90.000000])m3(part,hole,block,punch,casetop); // C16
 };
 module U4(){translate([-9.750000,0.000000,1.200000])rotate([0,0,90.000000])children();}
 module part_U4(part=true,hole=false,block=false,punch=false)
@@ -162,7 +162,7 @@ translate([-9.750000,0.000000,1.200000])rotate([0,0,90.000000])m7(part,hole,bloc
 module C1(){translate([-1.350000,0.400000,1.200000])rotate([0,0,90.000000])children();}
 module part_C1(part=true,hole=false,block=false,punch=false)
 {
-translate([-1.350000,0.400000,1.200000])rotate([0,0,90.000000])m0(part,hole,block,punch,casetop); // RevK:C_0201 C_0201_0603Metric (back)
+translate([-1.350000,0.400000,1.200000])rotate([0,0,90.000000])m0(part,hole,block,punch,casetop); // C19
 };
 module V2(){translate([-4.500000,-8.000000,1.200000])rotate([0,0,180.000000])children();}
 module part_V2(part=true,hole=false,block=false,punch=false)
@@ -171,7 +171,7 @@ module part_V2(part=true,hole=false,block=false,punch=false)
 module C15(){translate([4.100000,2.800000,1.200000])rotate([0,0,90.000000])children();}
 module part_C15(part=true,hole=false,block=false,punch=false)
 {
-translate([4.100000,2.800000,1.200000])rotate([0,0,90.000000])m8(part,hole,block,punch,casetop); // RevK:C_0805 C_0805_2012Metric (back)
+translate([4.100000,2.800000,1.200000])rotate([0,0,90.000000])m8(part,hole,block,punch,casetop); // C15
 };
 module J1(){translate([6.055000,5.000000,1.200000])rotate([0,0,-90.000000])children();}
 module part_J1(part=true,hole=false,block=false,punch=false)
@@ -185,12 +185,12 @@ module part_FID3(part=true,hole=false,block=false,punch=false)
 module R8(){translate([-1.100000,-0.600000,1.200000])rotate([0,0,180.000000])children();}
 module part_R8(part=true,hole=false,block=false,punch=false)
 {
-translate([-1.100000,-0.600000,1.200000])rotate([0,0,180.000000])m1(part,hole,block,punch,casetop); // RevK:R_0201 R_0201_0603Metric (back)
+translate([-1.100000,-0.600000,1.200000])rotate([0,0,180.000000])m1(part,hole,block,punch,casetop); // R6
 };
 module C17(){translate([4.100000,-1.000000,1.200000])rotate([0,0,90.000000])children();}
 module part_C17(part=true,hole=false,block=false,punch=false)
 {
-translate([4.100000,-1.000000,1.200000])rotate([0,0,90.000000])m8(part,hole,block,punch,casetop); // RevK:C_0805 C_0805_2012Metric (back)
+translate([4.100000,-1.000000,1.200000])rotate([0,0,90.000000])m8(part,hole,block,punch,casetop); // C15
 };
 module L1(){translate([1.700000,-5.200000,1.200000])rotate([0,0,-90.000000])children();}
 module part_L1(part=true,hole=false,block=false,punch=false)
@@ -200,17 +200,17 @@ translate([1.700000,-5.200000,1.200000])rotate([0,0,-90.000000])m10(part,hole,bl
 module R2(){translate([1.600000,6.900000,1.200000])rotate([0,0,90.000000])children();}
 module part_R2(part=true,hole=false,block=false,punch=false)
 {
-translate([1.600000,6.900000,1.200000])rotate([0,0,90.000000])m1(part,hole,block,punch,casetop); // RevK:R_0201 R_0201_0603Metric (back)
+translate([1.600000,6.900000,1.200000])rotate([0,0,90.000000])m1(part,hole,block,punch,casetop); // R6
 };
 module C18(){translate([0.850000,0.400000,1.200000])rotate([0,0,90.000000])children();}
 module part_C18(part=true,hole=false,block=false,punch=false)
 {
-translate([0.850000,0.400000,1.200000])rotate([0,0,90.000000])m0(part,hole,block,punch,casetop); // RevK:C_0201 C_0201_0603Metric (back)
+translate([0.850000,0.400000,1.200000])rotate([0,0,90.000000])m0(part,hole,block,punch,casetop); // C19
 };
 module C4(){translate([4.700000,-5.650000,1.200000])rotate([0,0,-90.000000])children();}
 module part_C4(part=true,hole=false,block=false,punch=false)
 {
-translate([4.700000,-5.650000,1.200000])rotate([0,0,-90.000000])m0(part,hole,block,punch,casetop); // RevK:C_0201 C_0201_0603Metric (back)
+translate([4.700000,-5.650000,1.200000])rotate([0,0,-90.000000])m0(part,hole,block,punch,casetop); // C19
 };
 module PCB1(){translate([-4.500000,0.000000,1.200000])children();}
 module part_PCB1(part=true,hole=false,block=false,punch=false)
@@ -323,7 +323,7 @@ part_J3(part,hole,block,punch);
 parts_bottom=0;
 module b(cx,cy,z,w,l,h){translate([cx-w/2,cy-l/2,z])cube([w,l,h]);}
 module m0(part=false,hole=false,block=false,punch=false,height)
-{ // RevK:C_0201 C_0201_0603Metric
+{ // C19
 // 0402 Capacitor
 if(part)
 {
@@ -333,7 +333,7 @@ if(part)
 }
 
 module m1(part=false,hole=false,block=false,punch=false,height)
-{ // RevK:R_0201 R_0201_0603Metric
+{ // R6
 // 0402 Resistor
 if(part)
 {
@@ -370,7 +370,7 @@ if(block)
 }
 
 module m3(part=false,hole=false,block=false,punch=false,height)
-{ // RevK:C_0402 C_0402_1005Metric
+{ // C16
 // 0402 Capacitor
 if(part)
 {
@@ -422,7 +422,7 @@ translate([-15.4/2,-15.45/2,0])
 }
 
 module m8(part=false,hole=false,block=false,punch=false,height)
-{ // RevK:C_0805 C_0805_2012Metric
+{ // C15
 // 0805 Capacitor
 if(part)
 {
