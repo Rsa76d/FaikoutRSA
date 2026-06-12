@@ -14,6 +14,9 @@ png:	$(patsubst %.kicad_pcb,%.png,$(wildcard */*.kicad_pcb))
 Faikout/FaikoutT.scad: Faikout/Faikout.kicad_pcb PCBCase/case
 	PCBCase/case -o $@ $< --edge=2 --top=7 --bottom=3 --pcb=2 --split-file --lip-type=1 --logo-angle=-90 --logo-x=-5 --name=""
 
+FaikoutETH/FaikoutT.scad: Faikout/Faikout.kicad_pcb PCBCase/case
+	PCBCase/case -o $@ $< --edge=2 --top=7 --bottom=3 --pcb=2 --split-file --lip-type=1 --logo-angle=-90 --logo-x=-5 --name=""
+
 PCBCase/clean: PCBCase/clean.c
 	make -C PCBCase
 
