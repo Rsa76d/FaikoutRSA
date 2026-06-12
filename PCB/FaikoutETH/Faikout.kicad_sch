@@ -15376,7 +15376,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_0603_1608Metric"
+		(property "Footprint" "RevK:L_0603"
 			(at 156.972 106.68 90)
 			(hide yes)
 			(show_name no)
@@ -18866,7 +18866,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_0603_1608Metric"
+		(property "Footprint" "RevK:L_0603"
 			(at 122.428 106.68 90)
 			(hide yes)
 			(show_name no)
@@ -22898,7 +22898,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_0603_1608Metric"
+		(property "Footprint" "RevK:L_0603"
 			(at 171.45 37.338 90)
 			(hide yes)
 			(show_name no)
