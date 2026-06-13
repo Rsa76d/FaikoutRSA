@@ -1,0 +1,19 @@
+# FaikoutPOE
+
+## Trademark
+
+This project is subject to the licence in the LICENCE file, and even if that says it is an open source project, you cannot sell boards or cases bearing the Andrews & Arnold Ltd name, the A&A logo, the registered trademark AJK logo or other registered trademarks, or any GS1 allocated EANs/barcode assigned to Andrews & Arnold Ltd.
+
+## PCB Designs
+
+These files are for use with [KiCAD](https://www.kicad.org).
+
+- [Faikout](Faikout.kicad_pro)
+
+## PCB Images
+
+<img src='Faikout.png' width=32%><img src='Faikout-90.png' width=32%><img src='Faikout-bottom.png' width=32%>
+
+---
+
+*Auto generated README.md 2026-06-13T08:42:21*
