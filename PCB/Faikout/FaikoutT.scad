@@ -1,6 +1,6 @@
 // Generated case design for Faikout/Faikout.kicad_pcb
 // By https://github.com/revk/PCBCase
-// Generated 2026-06-11 13:42:30
+// Generated 2026-06-13 07:00:17
 // title:	Faikout
 // company:	Adrian Kennard, Andrews & Arnold Ltd
 //
@@ -29,7 +29,7 @@ datey=0.000000;
 datet=0.500000;
 dateh=3.000000;
 datea=0;
-date="2026-06-10";
+date="2026-06-12";
 datef="OCRB";
 logox=-5.000000;
 logoy=0.000000;
