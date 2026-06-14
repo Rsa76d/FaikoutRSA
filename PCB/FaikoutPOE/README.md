@@ -10,10 +10,19 @@ These files are for use with [KiCAD](https://www.kicad.org).
 
 - [Faikout](Faikout.kicad_pro)
 
+## 3D
+
+3D case designs are normally automatically created from the PCB so as to ensure correct details and placement of apertures, etc.
+
+|Design|Bottom|Top|Combined|
+|------|------|---|--------|
+|Faikout|[![FaikoutB](FaikoutB.png)](FaikoutB.stl)|[![FaikoutT](FaikoutT.png)](FaikoutT.stl)|[![FaikoutC](FaikoutC.png)](FaikoutC.stl)|
+
 ## PCB Images
 
 <img src='Faikout.png' width=32%><img src='Faikout-90.png' width=32%><img src='Faikout-bottom.png' width=32%>
+<img src='Faikout-panel.png' width=49%><img src='Faikout-panel-bottom.png' width=49%>
 
 ---
 
-*Auto generated README.md 2026-06-13T08:42:21*
+*Auto generated README.md 2026-06-14T11:56:34*

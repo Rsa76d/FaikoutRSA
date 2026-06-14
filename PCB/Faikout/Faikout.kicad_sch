@@ -11048,7 +11048,7 @@
 				)
 			)
 		)
-		(property "Value" "1x5"
+		(property "Value" "S21"
 			(at 201.295 88.3721 0)
 			(show_name no)
 			(do_not_autoplace no)
