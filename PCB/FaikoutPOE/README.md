@@ -21,8 +21,9 @@ These files are for use with [KiCAD](https://www.kicad.org).
 ## PCB Images
 
 <img src='Faikout.png' width=32%><img src='Faikout-90.png' width=32%><img src='Faikout-bottom.png' width=32%>
+<img src='Faikout-alt.png' width=32%><img src='Faikout-alt-90.png' width=32%><img src='Faikout-alt-bottom.png' width=32%>
 <img src='Faikout-panel.png' width=49%><img src='Faikout-panel-bottom.png' width=49%>
 
 ---
 
-*Auto generated README.md 2026-06-14T12:03:33*
+*Auto generated README.md 2026-06-14T13:21:25*
