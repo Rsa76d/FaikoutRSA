@@ -1,6 +1,6 @@
 // Generated case design for FaikoutPOE/Faikout.kicad_pcb
 // By https://github.com/revk/PCBCase
-// Generated 2026-06-14 11:54:05
+// Generated 2026-06-14 11:59:49
 // title:	Faikout
 // date:	${CURRENT_DATE}
 //
@@ -12,7 +12,7 @@ lipa=0;
 lipt=1;
 casewall=3.000000;
 casebottom=3.000000;
-casetop=15.000000;
+casetop=18.000000;
 bottomthickness=0.000000;
 topthickness=0.000000;
 fit=0.000000;
