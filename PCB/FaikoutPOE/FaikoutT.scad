@@ -1,6 +1,6 @@
 // Generated case design for FaikoutPOE/Faikout.kicad_pcb
 // By https://github.com/revk/PCBCase
-// Generated 2026-06-15 07:20:23
+// Generated 2026-06-18 13:38:23
 // title:	Faikout
 // date:	${CURRENT_DATE}
 //
@@ -11,7 +11,7 @@ lip=3.000000;
 lipa=0;
 lipt=1;
 casewall=3.000000;
-casebottom=3.000000;
+casebottom=2.900000;
 casetop=18.000000;
 bottomthickness=0.000000;
 topthickness=0.000000;
@@ -29,7 +29,7 @@ datey=0.000000;
 datet=0.500000;
 dateh=3.000000;
 datea=90;
-date="2026-06-15";
+date="2026-06-18";
 datef="OCRB";
 logox=5.000000;
 logoy=0.000000;
@@ -45,416 +45,416 @@ nameh=5.000000;
 namea=90;
 name="Faikout";
 namef="OCRB";
-spacing=75.650000;
-pcbwidth=59.650000;
-function pcbwidth()=59.650000;
-pcblength=36.000000;
-function pcblength()=36.000000;
-originx=129.825000;
-originy=82.000000;
+spacing=52.000000;
+pcbwidth=36.000000;
+function pcbwidth()=36.000000;
+pcblength=58.000000;
+function pcblength()=58.000000;
+originx=118.000000;
+originy=71.000000;
 
-module outline(h=pcbthickness,r=0){linear_extrude(height=h)offset(r=r)polygon(points=[[-29.825000,-18.000000],[-29.825000,18.000000],[28.175000,18.000000],[28.175000,6.650000],[27.325000,4.100000],[18.025000,4.100000],[17.507362,4.031852],[17.025000,3.832051],[16.610786,3.514214],[16.292949,3.100000],[16.093148,2.617638],[16.025000,2.100000],[16.025000,-4.100000],[15.525000,-4.100000],[15.525000,-6.000000],[28.175000,-7.650000],[28.175000,-18.000000],[-27.025000,-4.500000],[-21.525000,-4.500000],[-21.136771,-4.448889],[-20.775000,-4.299038],[-20.464340,-4.060660],[-20.225962,-3.750000],[-20.076111,-3.388229],[-20.025000,-3.000000],[-20.076111,-2.611771],[-20.225962,-2.250000],[-20.464340,-1.939340],[-20.775000,-1.700962],[-21.136771,-1.551111],[-21.525000,-1.500000],[-27.025000,-1.500000],[-27.413229,-1.551111],[-27.775000,-1.700962],[-28.085660,-1.939340],[-28.324038,-2.250000],[-28.473889,-2.611771],[-28.525000,-3.000000],[-28.473889,-3.388229],[-28.324038,-3.750000],[-28.085660,-4.060660],[-27.775000,-4.299038],[-27.413229,-4.448889],[-20.025000,0.519303],[-19.973889,0.131074],[-19.824038,-0.230697],[-19.585660,-0.541357],[-19.275000,-0.779735],[-18.913229,-0.929586],[-18.525000,-0.980697],[-18.136771,-0.929586],[-17.775000,-0.779735],[-17.464340,-0.541357],[-17.225962,-0.230697],[-17.076111,0.131074],[-17.025000,0.519303],[-17.025000,15.000000],[-17.076111,15.388229],[-17.225962,15.750000],[-17.464340,16.060660],[-17.775000,16.299038],[-18.136771,16.448889],[-18.525000,16.500000],[-18.913229,16.448889],[-19.275000,16.299038],[-19.585660,16.060660],[-19.824038,15.750000],[-19.973889,15.388229],[-20.025000,15.000000],[27.715181,4.061571],[28.090367,3.947759],[28.436141,3.762940],[28.739214,3.514214],[28.987940,3.211141],[29.172759,2.865367],[29.286571,2.490181],[29.325000,2.100000],[29.325000,-4.100000],[29.825000,-4.100000],[29.825000,-6.000000]],paths=[[0,1,2,3],[4,5,6,7,8,9,10,11,12,13,14],[15,16,0],[17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42],[43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68],[4,69,70,71,72,73,74,75,76,77,78,79]]);}
+module outline(h=pcbthickness,r=0){linear_extrude(height=h)offset(r=r)polygon(points=[[-18.000000,-29.000000],[-18.000000,29.000000],[18.000000,29.000000],[18.000000,-29.000000],[6.650000,-29.000000],[6.650000,-27.100000],[6.150000,-27.100000],[6.150000,-20.900000],[6.081852,-20.382362],[5.882051,-19.900000],[5.564214,-19.485786],[5.150000,-19.167949],[4.667638,-18.968148],[4.150000,-18.900000],[-5.150000,-18.900000],[-5.667638,-18.968148],[-6.150000,-19.167949],[-6.564214,-19.485786],[-6.882051,-19.900000],[-7.081852,-20.382362],[-7.150000,-20.900000],[-7.150000,-27.100000],[-7.650000,-27.100000],[-7.650000,-29.000000],[0.519303,16.200000],[15.000000,16.200000],[15.388229,16.251111],[15.750000,16.400962],[16.060660,16.639340],[16.299038,16.950000],[16.448889,17.311771],[16.500000,17.700000],[16.448889,18.088229],[16.299038,18.450000],[16.060660,18.760660],[15.750000,18.999038],[15.388229,19.148889],[15.000000,19.200000],[0.519303,19.200000],[0.131074,19.148889],[-0.230697,18.999038],[-0.541357,18.760660],[-0.779735,18.450000],[-0.929586,18.088229],[-0.980697,17.700000],[-0.929586,17.311771],[-0.779735,16.950000],[-0.541357,16.639340],[-0.230697,16.400962],[0.131074,16.251111],[-1.500000,20.700000],[-1.500000,26.200000],[-1.551111,26.588229],[-1.700962,26.950000],[-1.939340,27.260660],[-2.250000,27.499038],[-2.611771,27.648889],[-3.000000,27.700000],[-3.388229,27.648889],[-3.750000,27.499038],[-4.060660,27.260660],[-4.299038,26.950000],[-4.448889,26.588229],[-4.500000,26.200000],[-4.500000,20.700000],[-4.448889,20.311771],[-4.299038,19.950000],[-4.060660,19.639340],[-3.750000,19.400962],[-3.388229,19.251111],[-3.000000,19.200000],[-2.611771,19.251111],[-2.250000,19.400962],[-1.939340,19.639340],[-1.700962,19.950000],[-1.551111,20.311771]],paths=[[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23],[24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49],[50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75]]);}
 
-module pcb(h=pcbthickness,r=0){linear_extrude(height=h)offset(r=r)polygon(points=[[-29.825000,-18.000000],[-29.825000,18.000000],[28.175000,18.000000],[28.175000,6.650000],[27.325000,4.100000],[18.025000,4.100000],[17.507362,4.031852],[17.025000,3.832051],[16.610786,3.514214],[16.292949,3.100000],[16.093148,2.617638],[16.025000,2.100000],[16.025000,-4.100000],[15.525000,-4.100000],[15.525000,-6.000000],[28.175000,-7.650000],[28.175000,-18.000000],[-27.025000,-4.500000],[-21.525000,-4.500000],[-21.136771,-4.448889],[-20.775000,-4.299038],[-20.464340,-4.060660],[-20.225962,-3.750000],[-20.076111,-3.388229],[-20.025000,-3.000000],[-20.076111,-2.611771],[-20.225962,-2.250000],[-20.464340,-1.939340],[-20.775000,-1.700962],[-21.136771,-1.551111],[-21.525000,-1.500000],[-27.025000,-1.500000],[-27.413229,-1.551111],[-27.775000,-1.700962],[-28.085660,-1.939340],[-28.324038,-2.250000],[-28.473889,-2.611771],[-28.525000,-3.000000],[-28.473889,-3.388229],[-28.324038,-3.750000],[-28.085660,-4.060660],[-27.775000,-4.299038],[-27.413229,-4.448889],[-20.025000,0.519303],[-19.973889,0.131074],[-19.824038,-0.230697],[-19.585660,-0.541357],[-19.275000,-0.779735],[-18.913229,-0.929586],[-18.525000,-0.980697],[-18.136771,-0.929586],[-17.775000,-0.779735],[-17.464340,-0.541357],[-17.225962,-0.230697],[-17.076111,0.131074],[-17.025000,0.519303],[-17.025000,15.000000],[-17.076111,15.388229],[-17.225962,15.750000],[-17.464340,16.060660],[-17.775000,16.299038],[-18.136771,16.448889],[-18.525000,16.500000],[-18.913229,16.448889],[-19.275000,16.299038],[-19.585660,16.060660],[-19.824038,15.750000],[-19.973889,15.388229],[-20.025000,15.000000],[27.715181,4.061571],[28.090367,3.947759],[28.436141,3.762940],[28.739214,3.514214],[28.987940,3.211141],[29.172759,2.865367],[29.286571,2.490181],[29.325000,2.100000],[29.325000,-4.100000],[29.825000,-4.100000],[29.825000,-6.000000]],paths=[[0,1,2,3],[4,5,6,7,8,9,10,11,12,13,14],[15,16,0],[17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42],[43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68],[4,69,70,71,72,73,74,75,76,77,78,79]]);}
-module L6(){translate([9.175000,-10.900000,0.800000])children();}
+module pcb(h=pcbthickness,r=0){linear_extrude(height=h)offset(r=r)polygon(points=[[-18.000000,-29.000000],[-18.000000,29.000000],[18.000000,29.000000],[18.000000,-29.000000],[6.650000,-29.000000],[6.650000,-27.100000],[6.150000,-27.100000],[6.150000,-20.900000],[6.081852,-20.382362],[5.882051,-19.900000],[5.564214,-19.485786],[5.150000,-19.167949],[4.667638,-18.968148],[4.150000,-18.900000],[-5.150000,-18.900000],[-5.667638,-18.968148],[-6.150000,-19.167949],[-6.564214,-19.485786],[-6.882051,-19.900000],[-7.081852,-20.382362],[-7.150000,-20.900000],[-7.150000,-27.100000],[-7.650000,-27.100000],[-7.650000,-29.000000],[0.519303,16.200000],[15.000000,16.200000],[15.388229,16.251111],[15.750000,16.400962],[16.060660,16.639340],[16.299038,16.950000],[16.448889,17.311771],[16.500000,17.700000],[16.448889,18.088229],[16.299038,18.450000],[16.060660,18.760660],[15.750000,18.999038],[15.388229,19.148889],[15.000000,19.200000],[0.519303,19.200000],[0.131074,19.148889],[-0.230697,18.999038],[-0.541357,18.760660],[-0.779735,18.450000],[-0.929586,18.088229],[-0.980697,17.700000],[-0.929586,17.311771],[-0.779735,16.950000],[-0.541357,16.639340],[-0.230697,16.400962],[0.131074,16.251111],[-1.500000,20.700000],[-1.500000,26.200000],[-1.551111,26.588229],[-1.700962,26.950000],[-1.939340,27.260660],[-2.250000,27.499038],[-2.611771,27.648889],[-3.000000,27.700000],[-3.388229,27.648889],[-3.750000,27.499038],[-4.060660,27.260660],[-4.299038,26.950000],[-4.448889,26.588229],[-4.500000,26.200000],[-4.500000,20.700000],[-4.448889,20.311771],[-4.299038,19.950000],[-4.060660,19.639340],[-3.750000,19.400962],[-3.388229,19.251111],[-3.000000,19.200000],[-2.611771,19.251111],[-2.250000,19.400962],[-1.939340,19.639340],[-1.700962,19.950000],[-1.551111,20.311771]],paths=[[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23],[24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49],[50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75]]);}
+module L6(){translate([-10.900000,-10.000000,0.800000])rotate([0,0,-90.000000])children();}
 module part_L6(part=true,hole=false,block=false,punch=false)
 {
-translate([9.175000,-10.900000,0.800000])m0(part,hole,block,punch,casetop); // L6
+translate([-10.900000,-10.000000,0.800000])rotate([0,0,-90.000000])m0(part,hole,block,punch,casetop); // L6
 };
-module C9(){translate([13.925000,15.050000,0.800000])children();}
+module C9(){translate([15.050000,-14.750000,0.800000])rotate([0,0,-90.000000])children();}
 module part_C9(part=true,hole=false,block=false,punch=false)
 {
-translate([13.925000,15.050000,0.800000])m1(part,hole,block,punch,casetop); // C9
+translate([15.050000,-14.750000,0.800000])rotate([0,0,-90.000000])m1(part,hole,block,punch,casetop); // C9
 };
-module C20(){translate([-18.825000,-6.000000,0.800000])rotate([0,0,180.000000])children();}
+module C20(){translate([-6.000000,18.000000,0.800000])rotate([0,0,90.000000])children();}
 module part_C20(part=true,hole=false,block=false,punch=false)
 {
-translate([-18.825000,-6.000000,0.800000])rotate([0,0,180.000000])m2(part,hole,block,punch,casetop); // C20
+translate([-6.000000,18.000000,0.800000])rotate([0,0,90.000000])m2(part,hole,block,punch,casetop); // C20
 };
-module R10(){translate([-20.775000,2.425000,0.800000])rotate([0,0,90.000000])children();}
+module R10(){translate([2.425000,19.950000,0.800000])children();}
 module part_R10(part=true,hole=false,block=false,punch=false)
 {
-translate([-20.775000,2.425000,0.800000])rotate([0,0,90.000000])m3(part,hole,block,punch,casetop); // R10
+translate([2.425000,19.950000,0.800000])m3(part,hole,block,punch,casetop); // R10
 };
-module C31(){translate([-5.725000,-5.700000,0.800000])rotate([0,0,180.000000])children();}
+module C31(){translate([-5.700000,4.900000,0.800000])rotate([0,0,90.000000])children();}
 module part_C31(part=true,hole=false,block=false,punch=false)
 {
-translate([-5.725000,-5.700000,0.800000])rotate([0,0,180.000000])m1(part,hole,block,punch,casetop); // C9
+translate([-5.700000,4.900000,0.800000])rotate([0,0,90.000000])m1(part,hole,block,punch,casetop); // C9
 };
-module L2(){translate([3.375000,-10.900000,0.800000])children();}
+module L2(){translate([-10.900000,-4.200000,0.800000])rotate([0,0,-90.000000])children();}
 module part_L2(part=true,hole=false,block=false,punch=false)
 {
-translate([3.375000,-10.900000,0.800000])m0(part,hole,block,punch,casetop); // L6
+translate([-10.900000,-4.200000,0.800000])rotate([0,0,-90.000000])m0(part,hole,block,punch,casetop); // L6
 };
-module C30(){translate([-9.411957,-9.979610,0.800000])rotate([0,0,180.000000])children();}
+module C30(){translate([-9.979610,8.586957,0.800000])rotate([0,0,90.000000])children();}
 module part_C30(part=true,hole=false,block=false,punch=false)
 {
-translate([-9.411957,-9.979610,0.800000])rotate([0,0,180.000000])m1(part,hole,block,punch,casetop); // C9
+translate([-9.979610,8.586957,0.800000])rotate([0,0,90.000000])m1(part,hole,block,punch,casetop); // C9
 };
-module D1(){translate([13.352500,17.100000,0.800000])children();}
+module D1(){translate([17.100000,-14.177500,0.800000])rotate([0,0,-90.000000])children();}
 module part_D1(part=true,hole=false,block=false,punch=false)
 {
-translate([13.352500,17.100000,0.800000])m4(part,hole,block,punch,casetop); // D1
+translate([17.100000,-14.177500,0.800000])rotate([0,0,-90.000000])m4(part,hole,block,punch,casetop); // D1
 };
-module C1(){translate([13.875000,8.700000,0.800000])rotate([0,0,90.000000])children();}
+module C1(){translate([8.700000,-14.700000,0.800000])children();}
 module part_C1(part=true,hole=false,block=false,punch=false)
 {
-translate([13.875000,8.700000,0.800000])rotate([0,0,90.000000])m1(part,hole,block,punch,casetop); // C9
+translate([8.700000,-14.700000,0.800000])m1(part,hole,block,punch,casetop); // C9
 };
-module R5(){translate([-27.900000,-6.300000,0.800000])children();}
+module R5(){translate([-6.300000,27.075000,0.800000])rotate([0,0,-90.000000])children();}
 module part_R5(part=true,hole=false,block=false,punch=false)
 {
-translate([-27.900000,-6.300000,0.800000])m3(part,hole,block,punch,casetop); // R10
+translate([-6.300000,27.075000,0.800000])rotate([0,0,-90.000000])m3(part,hole,block,punch,casetop); // R10
 };
-module C11(){translate([14.475000,8.700000,0.800000])rotate([0,0,90.000000])children();}
+module C11(){translate([8.700000,-15.300000,0.800000])children();}
 module part_C11(part=true,hole=false,block=false,punch=false)
 {
-translate([14.475000,8.700000,0.800000])rotate([0,0,90.000000])m1(part,hole,block,punch,casetop); // C9
+translate([8.700000,-15.300000,0.800000])m1(part,hole,block,punch,casetop); // C9
 };
-module C8(){translate([13.925000,14.450000,0.800000])children();}
+module C8(){translate([14.450000,-14.750000,0.800000])rotate([0,0,-90.000000])children();}
 module part_C8(part=true,hole=false,block=false,punch=false)
 {
-translate([13.925000,14.450000,0.800000])m1(part,hole,block,punch,casetop); // C9
+translate([14.450000,-14.750000,0.800000])rotate([0,0,-90.000000])m1(part,hole,block,punch,casetop); // C9
 };
-module C5(){translate([8.175000,16.500000,0.800000])rotate([0,0,180.000000])children();}
+module C5(){translate([16.500000,-9.000000,0.800000])rotate([0,0,90.000000])children();}
 module part_C5(part=true,hole=false,block=false,punch=false)
 {
-translate([8.175000,16.500000,0.800000])rotate([0,0,180.000000])m5(part,hole,block,punch,casetop); // C5
+translate([16.500000,-9.000000,0.800000])rotate([0,0,90.000000])m5(part,hole,block,punch,casetop); // C5
 };
-module C24(){translate([13.075000,-6.900000,0.800000])rotate([0,0,90.000000])children();}
+module C24(){translate([-6.900000,-13.900000,0.800000])children();}
 module part_C24(part=true,hole=false,block=false,punch=false)
 {
-translate([13.075000,-6.900000,0.800000])rotate([0,0,90.000000])m5(part,hole,block,punch,casetop); // C5
+translate([-6.900000,-13.900000,0.800000])m5(part,hole,block,punch,casetop); // C5
 };
-module L13(){translate([-3.825000,-1.500000,0.800000])rotate([0,0,90.000000])children();}
+module L13(){translate([-1.500000,3.000000,0.800000])children();}
 module part_L13(part=true,hole=false,block=false,punch=false)
 {
-translate([-3.825000,-1.500000,0.800000])rotate([0,0,90.000000])m6(part,hole,block,punch,casetop); // L13
+translate([-1.500000,3.000000,0.800000])m6(part,hole,block,punch,casetop); // L13
 };
-module C14(){translate([14.725000,13.950000,0.800000])rotate([0,0,90.000000])children();}
+module C14(){translate([13.950000,-15.550000,0.800000])children();}
 module part_C14(part=true,hole=false,block=false,punch=false)
 {
-translate([14.725000,13.950000,0.800000])rotate([0,0,90.000000])m1(part,hole,block,punch,casetop); // C9
+translate([13.950000,-15.550000,0.800000])m1(part,hole,block,punch,casetop); // C9
 };
-module R14(){translate([-5.725000,-6.300000,0.800000])children();}
+module R14(){translate([-6.300000,4.900000,0.800000])rotate([0,0,-90.000000])children();}
 module part_R14(part=true,hole=false,block=false,punch=false)
 {
-translate([-5.725000,-6.300000,0.800000])m3(part,hole,block,punch,casetop); // R10
+translate([-6.300000,4.900000,0.800000])rotate([0,0,-90.000000])m3(part,hole,block,punch,casetop); // R10
 };
-module C32(){translate([-5.525000,-4.925000,0.800000])rotate([0,0,90.000000])children();}
+module C32(){translate([-4.925000,4.700000,0.800000])children();}
 module part_C32(part=true,hole=false,block=false,punch=false)
 {
-translate([-5.525000,-4.925000,0.800000])rotate([0,0,90.000000])m1(part,hole,block,punch,casetop); // C9
+translate([-4.925000,4.700000,0.800000])m1(part,hole,block,punch,casetop); // C9
 };
-module U3(){translate([-25.875000,-3.000000,0.800000])rotate([0,0,90.000000])children();}
+module U3(){translate([-3.000000,25.050000,0.800000])children();}
 module part_U3(part=true,hole=false,block=false,punch=false)
 {
 // Missing model U3.1 SOP-4_4.4x2.6mm_P1.27mm
 };
-module FB3(){translate([6.302000,11.810000,0.800000])rotate([0,0,-90.000000])children();}
+module FB3(){translate([11.810000,-7.127000,0.800000])rotate([0,0,180.000000])children();}
 module part_FB3(part=true,hole=false,block=false,punch=false)
 {
-translate([6.302000,11.810000,0.800000])rotate([0,0,-90.000000])m7(part,hole,block,punch,casetop); // FB3
+translate([11.810000,-7.127000,0.800000])rotate([0,0,180.000000])m7(part,hole,block,punch,casetop); // FB3
 };
-module C4(){translate([10.475000,16.775000,0.800000])rotate([0,0,90.000000])children();}
+module C4(){translate([16.775000,-11.300000,0.800000])children();}
 module part_C4(part=true,hole=false,block=false,punch=false)
 {
-translate([10.475000,16.775000,0.800000])rotate([0,0,90.000000])m1(part,hole,block,punch,casetop); // C9
+translate([16.775000,-11.300000,0.800000])m1(part,hole,block,punch,casetop); // C9
 };
-module TR1(){translate([7.175000,-0.500000,0.800000])rotate([0,0,180.000000])children();}
+module TR1(){translate([-0.500000,-8.000000,0.800000])rotate([0,0,90.000000])children();}
 module part_TR1(part=true,hole=false,block=false,punch=false)
 {
-translate([7.175000,-0.500000,0.800000])rotate([0,0,180.000000])m8(part,hole,block,punch,casetop); // TR1
+translate([-0.500000,-8.000000,0.800000])rotate([0,0,90.000000])m8(part,hole,block,punch,casetop); // TR1
 };
-module C33(){translate([-12.025000,-7.600000,0.800000])rotate([0,0,-90.000000])children();}
+module C33(){translate([-7.600000,11.200000,0.800000])rotate([0,0,180.000000])children();}
 module part_C33(part=true,hole=false,block=false,punch=false)
 {
-translate([-12.025000,-7.600000,0.800000])rotate([0,0,-90.000000])m9(part,hole,block,punch,casetop); // C33
+translate([-7.600000,11.200000,0.800000])rotate([0,0,180.000000])m9(part,hole,block,punch,casetop); // C33
 };
-module C17(){translate([-0.100000,-3.000000,0.800000])rotate([0,0,180.000000])children();}
+module C17(){translate([-3.000000,-0.725000,0.800000])rotate([0,0,90.000000])children();}
 module part_C17(part=true,hole=false,block=false,punch=false)
 {
-translate([-0.100000,-3.000000,0.800000])rotate([0,0,180.000000])m1(part,hole,block,punch,casetop); // C9
+translate([-3.000000,-0.725000,0.800000])rotate([0,0,90.000000])m1(part,hole,block,punch,casetop); // C9
 };
-module U1(){translate([10.175000,13.000000,0.800000])children();}
+module U1(){translate([13.000000,-11.000000,0.800000])rotate([0,0,-90.000000])children();}
 module part_U1(part=true,hole=false,block=false,punch=false)
 {
-translate([10.175000,13.000000,0.800000])m10(part,hole,block,punch,casetop); // U1
+translate([13.000000,-11.000000,0.800000])rotate([0,0,-90.000000])m10(part,hole,block,punch,casetop); // U1
 };
-module C29(){translate([-9.025000,-8.600000,0.800000])rotate([0,0,180.000000])children();}
+module C29(){translate([-8.600000,8.200000,0.800000])rotate([0,0,90.000000])children();}
 module part_C29(part=true,hole=false,block=false,punch=false)
 {
-translate([-9.025000,-8.600000,0.800000])rotate([0,0,180.000000])m11(part,hole,block,punch,casetop); // C29
+translate([-8.600000,8.200000,0.800000])rotate([0,0,90.000000])m11(part,hole,block,punch,casetop); // C29
 };
-module L3(){translate([6.275000,-9.400000,0.800000])children();}
+module L3(){translate([-9.400000,-7.100000,0.800000])rotate([0,0,-90.000000])children();}
 module part_L3(part=true,hole=false,block=false,punch=false)
 {
-translate([6.275000,-9.400000,0.800000])m0(part,hole,block,punch,casetop); // L6
+translate([-9.400000,-7.100000,0.800000])rotate([0,0,-90.000000])m0(part,hole,block,punch,casetop); // L6
 };
-module U5(){translate([-22.375000,-3.000000,0.800000])rotate([0,0,-90.000000])children();}
+module U5(){translate([-3.000000,21.550000,0.800000])rotate([0,0,180.000000])children();}
 module part_U5(part=true,hole=false,block=false,punch=false)
 {
 // Missing model U5.1 SOP-4_4.4x2.6mm_P1.27mm
 };
-module R9(){translate([-0.325000,1.700000,0.800000])rotate([0,0,180.000000])children();}
+module R9(){translate([1.700000,-0.500000,0.800000])rotate([0,0,90.000000])children();}
 module part_R9(part=true,hole=false,block=false,punch=false)
 {
-translate([-0.325000,1.700000,0.800000])rotate([0,0,180.000000])m3(part,hole,block,punch,casetop); // R10
+translate([1.700000,-0.500000,0.800000])rotate([0,0,90.000000])m3(part,hole,block,punch,casetop); // R10
 };
-module C23(){translate([13.975000,-6.900000,0.800000])rotate([0,0,-90.000000])children();}
+module C23(){translate([-6.900000,-14.800000,0.800000])rotate([0,0,180.000000])children();}
 module part_C23(part=true,hole=false,block=false,punch=false)
 {
-translate([13.975000,-6.900000,0.800000])rotate([0,0,-90.000000])m5(part,hole,block,punch,casetop); // C5
+translate([-6.900000,-14.800000,0.800000])rotate([0,0,180.000000])m5(part,hole,block,punch,casetop); // C5
 };
-module R19(){translate([1.175000,13.500000,0.800000])rotate([0,0,180.000000])children();}
+module R19(){translate([13.500000,-2.000000,0.800000])rotate([0,0,90.000000])children();}
 module part_R19(part=true,hole=false,block=false,punch=false)
 {
-translate([1.175000,13.500000,0.800000])rotate([0,0,180.000000])m3(part,hole,block,punch,casetop); // R10
+translate([13.500000,-2.000000,0.800000])rotate([0,0,90.000000])m3(part,hole,block,punch,casetop); // R10
 };
-module M3(){translate([25.380000,-12.395000,0.800000])rotate([0,0,-90.000000])children();}
+module M3(){translate([-12.395000,-26.205000,0.800000])rotate([0,0,180.000000])children();}
 module part_M3(part=true,hole=false,block=false,punch=false)
 {
-translate([25.380000,-12.395000,0.800000])rotate([0,0,-90.000000])translate([3.000000,0.000000,1.500000])rotate([90.000000,0.000000,-90.000000])m12(part,hole,block,punch,casetop); // RevK:Ag970XX-FL Ag97000_Detailed (back)
+translate([-12.395000,-26.205000,0.800000])rotate([0,0,180.000000])translate([3.000000,0.000000,1.500000])rotate([90.000000,0.000000,-90.000000])m12(part,hole,block,punch,casetop); // RevK:Ag970XX-FL Ag97000_Detailed (back)
 };
-module Y1(){translate([16.725000,12.950000,0.800000])rotate([0,0,-90.000000])children();}
+module Y1(){translate([12.950000,-17.550000,0.800000])rotate([0,0,180.000000])children();}
 module part_Y1(part=true,hole=false,block=false,punch=false)
 {
-translate([16.725000,12.950000,0.800000])rotate([0,0,-90.000000])m13(part,hole,block,punch,casetop); // Y1
+translate([12.950000,-17.550000,0.800000])rotate([0,0,180.000000])m13(part,hole,block,punch,casetop); // Y1
 };
-module L9(){translate([9.175000,-12.400000,0.800000])children();}
+module L9(){translate([-12.400000,-10.000000,0.800000])rotate([0,0,-90.000000])children();}
 module part_L9(part=true,hole=false,block=false,punch=false)
 {
-translate([9.175000,-12.400000,0.800000])m0(part,hole,block,punch,casetop); // L6
+translate([-12.400000,-10.000000,0.800000])rotate([0,0,-90.000000])m0(part,hole,block,punch,casetop); // L6
 };
-module L10(){translate([12.375000,-10.000000,0.800000])children();}
+module L10(){translate([-10.000000,-13.200000,0.800000])rotate([0,0,-90.000000])children();}
 module part_L10(part=true,hole=false,block=false,punch=false)
 {
-translate([12.375000,-10.000000,0.800000])m0(part,hole,block,punch,casetop); // L6
+translate([-10.000000,-13.200000,0.800000])rotate([0,0,-90.000000])m0(part,hole,block,punch,casetop); // L6
 };
-module C6(){translate([6.202000,10.010000,0.800000])rotate([0,0,180.000000])children();}
+module C6(){translate([10.010000,-7.027000,0.800000])rotate([0,0,90.000000])children();}
 module part_C6(part=true,hole=false,block=false,punch=false)
 {
-translate([6.202000,10.010000,0.800000])rotate([0,0,180.000000])m1(part,hole,block,punch,casetop); // C9
+translate([10.010000,-7.027000,0.800000])rotate([0,0,90.000000])m1(part,hole,block,punch,casetop); // C9
 };
-module R15(){translate([-5.725000,-6.900000,0.800000])rotate([0,0,180.000000])children();}
+module R15(){translate([-6.900000,4.900000,0.800000])rotate([0,0,90.000000])children();}
 module part_R15(part=true,hole=false,block=false,punch=false)
 {
-translate([-5.725000,-6.900000,0.800000])rotate([0,0,180.000000])m3(part,hole,block,punch,casetop); // R10
+translate([-6.900000,4.900000,0.800000])rotate([0,0,90.000000])m3(part,hole,block,punch,casetop); // R10
 };
-module L12(){translate([18.175000,-10.000000,0.800000])children();}
+module L12(){translate([-10.000000,-19.000000,0.800000])rotate([0,0,-90.000000])children();}
 module part_L12(part=true,hole=false,block=false,punch=false)
 {
-translate([18.175000,-10.000000,0.800000])m0(part,hole,block,punch,casetop); // L6
+translate([-10.000000,-19.000000,0.800000])rotate([0,0,-90.000000])m0(part,hole,block,punch,casetop); // L6
 };
-module C3(){translate([9.875000,16.775000,0.800000])rotate([0,0,90.000000])children();}
+module C3(){translate([16.775000,-10.700000,0.800000])children();}
 module part_C3(part=true,hole=false,block=false,punch=false)
 {
-translate([9.875000,16.775000,0.800000])rotate([0,0,90.000000])m1(part,hole,block,punch,casetop); // C9
+translate([16.775000,-10.700000,0.800000])m1(part,hole,block,punch,casetop); // C9
 };
-module C7(){translate([6.502000,9.210000,0.800000])rotate([0,0,180.000000])children();}
+module C7(){translate([9.210000,-7.327000,0.800000])rotate([0,0,90.000000])children();}
 module part_C7(part=true,hole=false,block=false,punch=false)
 {
-translate([6.502000,9.210000,0.800000])rotate([0,0,180.000000])m5(part,hole,block,punch,casetop); // C5
+translate([9.210000,-7.327000,0.800000])rotate([0,0,90.000000])m5(part,hole,block,punch,casetop); // C5
 };
-module L4(){translate([6.275000,-10.900000,0.800000])children();}
+module L4(){translate([-10.900000,-7.100000,0.800000])rotate([0,0,-90.000000])children();}
 module part_L4(part=true,hole=false,block=false,punch=false)
 {
-translate([6.275000,-10.900000,0.800000])m0(part,hole,block,punch,casetop); // L6
+translate([-10.900000,-7.100000,0.800000])rotate([0,0,-90.000000])m0(part,hole,block,punch,casetop); // L6
 };
-module R4(){translate([12.802000,8.200000,0.800000])rotate([0,0,180.000000])children();}
+module R4(){translate([8.200000,-13.627000,0.800000])rotate([0,0,90.000000])children();}
 module part_R4(part=true,hole=false,block=false,punch=false)
 {
-translate([12.802000,8.200000,0.800000])rotate([0,0,180.000000])m3(part,hole,block,punch,casetop); // R10
+translate([8.200000,-13.627000,0.800000])rotate([0,0,90.000000])m3(part,hole,block,punch,casetop); // R10
 };
-module R18(){translate([1.175000,12.900000,0.800000])rotate([0,0,180.000000])children();}
+module R18(){translate([12.900000,-2.000000,0.800000])rotate([0,0,90.000000])children();}
 module part_R18(part=true,hole=false,block=false,punch=false)
 {
-translate([1.175000,12.900000,0.800000])rotate([0,0,180.000000])m3(part,hole,block,punch,casetop); // R10
+translate([12.900000,-2.000000,0.800000])rotate([0,0,90.000000])m3(part,hole,block,punch,casetop); // R10
 };
-module D3(){translate([-27.575000,0.400000,0.800000])rotate([0,0,-90.000000])children();}
+module D3(){translate([0.400000,26.750000,0.800000])rotate([0,0,180.000000])children();}
 module part_D3(part=true,hole=false,block=false,punch=false)
 {
-translate([-27.575000,0.400000,0.800000])rotate([0,0,-90.000000])m14(part,hole,block,punch,casetop); // D3
+translate([0.400000,26.750000,0.800000])rotate([0,0,180.000000])m14(part,hole,block,punch,casetop); // D3
 };
-module C13(){translate([12.802000,9.400000,0.800000])rotate([0,0,180.000000])children();}
+module C13(){translate([9.400000,-13.627000,0.800000])rotate([0,0,90.000000])children();}
 module part_C13(part=true,hole=false,block=false,punch=false)
 {
-translate([12.802000,9.400000,0.800000])rotate([0,0,180.000000])m1(part,hole,block,punch,casetop); // C9
+translate([9.400000,-13.627000,0.800000])rotate([0,0,90.000000])m1(part,hole,block,punch,casetop); // C9
 };
-module R22(){translate([-13.675000,-12.575000,0.800000])rotate([0,0,-90.000000])children();}
+module R22(){translate([-12.575000,12.850000,0.800000])rotate([0,0,180.000000])children();}
 module part_R22(part=true,hole=false,block=false,punch=false)
 {
-translate([-13.675000,-12.575000,0.800000])rotate([0,0,-90.000000])m3(part,hole,block,punch,casetop); // R10
+translate([-12.575000,12.850000,0.800000])rotate([0,0,180.000000])m3(part,hole,block,punch,casetop); // R10
 };
-module C21(){translate([-12.325000,-1.500000,0.800000])rotate([0,0,180.000000])children();}
+module C21(){translate([-1.500000,11.500000,0.800000])rotate([0,0,90.000000])children();}
 module part_C21(part=true,hole=false,block=false,punch=false)
 {
-translate([-12.325000,-1.500000,0.800000])rotate([0,0,180.000000])m15(part,hole,block,punch,casetop); // C21
+translate([-1.500000,11.500000,0.800000])rotate([0,0,90.000000])m15(part,hole,block,punch,casetop); // C21
 };
-module R2(){translate([8.075000,8.800000,0.800000])children();}
+module R2(){translate([8.800000,-8.900000,0.800000])rotate([0,0,-90.000000])children();}
 module part_R2(part=true,hole=false,block=false,punch=false)
 {
-translate([8.075000,8.800000,0.800000])m3(part,hole,block,punch,casetop); // R10
+translate([8.800000,-8.900000,0.800000])rotate([0,0,-90.000000])m3(part,hole,block,punch,casetop); // R10
 };
-module F3(){translate([-27.225000,-9.500000,0.800000])children();}
+module F3(){translate([-9.500000,26.400000,0.800000])rotate([0,0,-90.000000])children();}
 module part_F3(part=true,hole=false,block=false,punch=false)
 {
-translate([-27.225000,-9.500000,0.800000])m16(part,hole,block,punch,casetop); // F3
+translate([-9.500000,26.400000,0.800000])rotate([0,0,-90.000000])m16(part,hole,block,punch,casetop); // F3
 };
-module R21(){translate([-10.900000,-10.550000,0.800000])rotate([0,0,180.000000])children();}
+module R21(){translate([-10.550000,10.075000,0.800000])rotate([0,0,90.000000])children();}
 module part_R21(part=true,hole=false,block=false,punch=false)
 {
-translate([-10.900000,-10.550000,0.800000])rotate([0,0,180.000000])m3(part,hole,block,punch,casetop); // R10
+translate([-10.550000,10.075000,0.800000])rotate([0,0,90.000000])m3(part,hole,block,punch,casetop); // R10
 };
-module L1(){translate([3.375000,-9.400000,0.800000])children();}
+module L1(){translate([-9.400000,-4.200000,0.800000])rotate([0,0,-90.000000])children();}
 module part_L1(part=true,hole=false,block=false,punch=false)
 {
-translate([3.375000,-9.400000,0.800000])m0(part,hole,block,punch,casetop); // L6
+translate([-9.400000,-4.200000,0.800000])rotate([0,0,-90.000000])m0(part,hole,block,punch,casetop); // L6
 };
-module D4(){translate([26.675000,16.500000,0.800000])rotate([0,0,-90.000000])children();}
+module D4(){translate([16.500000,-27.500000,0.800000])rotate([0,0,180.000000])children();}
 module part_D4(part=true,hole=false,block=false,punch=false)
 {
-translate([26.675000,16.500000,0.800000])rotate([0,0,-90.000000])m17(part,hole,block,punch,casetop); // D4
+translate([16.500000,-27.500000,0.800000])rotate([0,0,180.000000])m17(part,hole,block,punch,casetop); // D4
 };
-module L11(){translate([15.275000,-10.000000,0.800000])children();}
+module L11(){translate([-10.000000,-16.100000,0.800000])rotate([0,0,-90.000000])children();}
 module part_L11(part=true,hole=false,block=false,punch=false)
 {
-translate([15.275000,-10.000000,0.800000])m0(part,hole,block,punch,casetop); // L6
+translate([-10.000000,-16.100000,0.800000])rotate([0,0,-90.000000])m0(part,hole,block,punch,casetop); // L6
 };
-module R8(){translate([13.900000,11.250000,0.800000])rotate([0,0,180.000000])children();}
+module R8(){translate([11.250000,-14.725000,0.800000])rotate([0,0,90.000000])children();}
 module part_R8(part=true,hole=false,block=false,punch=false)
 {
-translate([13.900000,11.250000,0.800000])rotate([0,0,180.000000])m3(part,hole,block,punch,casetop); // R10
+translate([11.250000,-14.725000,0.800000])rotate([0,0,90.000000])m3(part,hole,block,punch,casetop); // R10
 };
-module J2(){translate([-22.525000,5.000000,0.800000])rotate([0,0,90.000000])children();}
+module J2(){translate([5.000000,21.700000,0.800000])children();}
 module part_J2(part=true,hole=false,block=false,punch=false)
 {
-translate([-22.525000,5.000000,0.800000])rotate([0,0,90.000000])m18(part,hole,block,punch,casetop,05); // J2
+translate([5.000000,21.700000,0.800000])m18(part,hole,block,punch,casetop,05); // J2
 };
-module D2(){translate([11.775000,16.875000,0.800000])rotate([0,0,90.000000])children();}
+module D2(){translate([16.875000,-12.600000,0.800000])children();}
 module part_D2(part=true,hole=false,block=false,punch=false)
 {
-translate([11.775000,16.875000,0.800000])rotate([0,0,90.000000])m4(part,hole,block,punch,casetop); // D1
+translate([16.875000,-12.600000,0.800000])m4(part,hole,block,punch,casetop); // D1
 };
-module C15(){translate([14.725000,11.975000,0.800000])rotate([0,0,-90.000000])children();}
+module C15(){translate([11.975000,-15.550000,0.800000])rotate([0,0,180.000000])children();}
 module part_C15(part=true,hole=false,block=false,punch=false)
 {
-translate([14.725000,11.975000,0.800000])rotate([0,0,-90.000000])m1(part,hole,block,punch,casetop); // C9
+translate([11.975000,-15.550000,0.800000])rotate([0,0,180.000000])m1(part,hole,block,punch,casetop); // C9
 };
-module L5(){translate([9.175000,-9.400000,0.800000])children();}
+module L5(){translate([-9.400000,-10.000000,0.800000])rotate([0,0,-90.000000])children();}
 module part_L5(part=true,hole=false,block=false,punch=false)
 {
-translate([9.175000,-9.400000,0.800000])m0(part,hole,block,punch,casetop); // L6
+translate([-9.400000,-10.000000,0.800000])rotate([0,0,-90.000000])m0(part,hole,block,punch,casetop); // L6
 };
-module D5(){translate([-22.575000,1.800000,0.800000])rotate([0,0,180.000000])children();}
+module D5(){translate([1.800000,21.750000,0.800000])rotate([0,0,90.000000])children();}
 module part_D5(part=true,hole=false,block=false,punch=false)
 {
-translate([-22.575000,1.800000,0.800000])rotate([0,0,180.000000])m14(part,hole,block,punch,casetop); // D3
+translate([1.800000,21.750000,0.800000])rotate([0,0,90.000000])m14(part,hole,block,punch,casetop); // D3
 };
-module L7(){translate([3.375000,-12.400000,0.800000])children();}
+module L7(){translate([-12.400000,-4.200000,0.800000])rotate([0,0,-90.000000])children();}
 module part_L7(part=true,hole=false,block=false,punch=false)
 {
-translate([3.375000,-12.400000,0.800000])m0(part,hole,block,punch,casetop); // L6
+translate([-12.400000,-4.200000,0.800000])rotate([0,0,-90.000000])m0(part,hole,block,punch,casetop); // L6
 };
-module L8(){translate([6.275000,-12.400000,0.800000])children();}
+module L8(){translate([-12.400000,-7.100000,0.800000])rotate([0,0,-90.000000])children();}
 module part_L8(part=true,hole=false,block=false,punch=false)
 {
-translate([6.275000,-12.400000,0.800000])m0(part,hole,block,punch,casetop); // L6
+translate([-12.400000,-7.100000,0.800000])rotate([0,0,-90.000000])m0(part,hole,block,punch,casetop); // L6
 };
-module J1(){translate([22.675000,-0.500000,0.800000])rotate([0,0,90.000000])children();}
+module J1(){translate([-0.500000,-23.500000,0.800000])children();}
 module part_J1(part=true,hole=false,block=false,punch=false)
 {
-translate([22.675000,-0.500000,0.800000])rotate([0,0,90.000000])m19(part,hole,block,punch,casetop); // J1
+translate([-0.500000,-23.500000,0.800000])m19(part,hole,block,punch,casetop); // J1
 };
-module C19(){translate([5.102000,12.275000,0.800000])rotate([0,0,-90.000000])children();}
+module C19(){translate([12.275000,-5.927000,0.800000])rotate([0,0,180.000000])children();}
 module part_C19(part=true,hole=false,block=false,punch=false)
 {
-translate([5.102000,12.275000,0.800000])rotate([0,0,-90.000000])m1(part,hole,block,punch,casetop); // C9
+translate([12.275000,-5.927000,0.800000])rotate([0,0,180.000000])m1(part,hole,block,punch,casetop); // C9
 };
-module U4(){translate([-4.025000,-5.500000,0.800000])rotate([0,0,180.000000])children();}
+module U4(){translate([-5.500000,3.200000,0.800000])rotate([0,0,90.000000])children();}
 module part_U4(part=true,hole=false,block=false,punch=false)
 {
-translate([-4.025000,-5.500000,0.800000])rotate([0,0,180.000000])m20(part,hole,block,punch,casetop); // U4
+translate([-5.500000,3.200000,0.800000])rotate([0,0,90.000000])m20(part,hole,block,punch,casetop); // U4
 };
-module R3(){translate([12.802000,8.800000,0.800000])rotate([0,0,180.000000])children();}
+module R3(){translate([8.800000,-13.627000,0.800000])rotate([0,0,90.000000])children();}
 module part_R3(part=true,hole=false,block=false,punch=false)
 {
-translate([12.802000,8.800000,0.800000])rotate([0,0,180.000000])m3(part,hole,block,punch,casetop); // R10
+translate([8.800000,-13.627000,0.800000])rotate([0,0,90.000000])m3(part,hole,block,punch,casetop); // R10
 };
-module C10(){translate([13.925000,15.750000,0.800000])children();}
+module C10(){translate([15.750000,-14.750000,0.800000])rotate([0,0,-90.000000])children();}
 module part_C10(part=true,hole=false,block=false,punch=false)
 {
-translate([13.925000,15.750000,0.800000])m5(part,hole,block,punch,casetop); // C5
+translate([15.750000,-14.750000,0.800000])rotate([0,0,-90.000000])m5(part,hole,block,punch,casetop); // C5
 };
-module C34(){translate([3.950000,17.000000,0.800000])rotate([0,0,180.000000])children();}
+module C34(){translate([17.000000,-4.775000,0.800000])rotate([0,0,90.000000])children();}
 module part_C34(part=true,hole=false,block=false,punch=false)
 {
-translate([3.950000,17.000000,0.800000])rotate([0,0,180.000000])m1(part,hole,block,punch,casetop); // C9
+translate([17.000000,-4.775000,0.800000])rotate([0,0,90.000000])m1(part,hole,block,punch,casetop); // C9
 };
-module R12(){translate([-3.025000,-6.900000,0.800000])children();}
+module R12(){translate([-6.900000,2.200000,0.800000])rotate([0,0,-90.000000])children();}
 module part_R12(part=true,hole=false,block=false,punch=false)
 {
-translate([-3.025000,-6.900000,0.800000])m3(part,hole,block,punch,casetop); // R10
+translate([-6.900000,2.200000,0.800000])rotate([0,0,-90.000000])m3(part,hole,block,punch,casetop); // R10
 };
-module U2(){translate([-8.775000,10.250000,0.800000])children();}
+module U2(){translate([10.250000,7.950000,0.800000])rotate([0,0,-90.000000])children();}
 module part_U2(part=true,hole=false,block=false,punch=false)
 {
-translate([-8.775000,10.250000,0.800000])m21(part,hole,block,punch,casetop); // U2
+translate([10.250000,7.950000,0.800000])rotate([0,0,-90.000000])m21(part,hole,block,punch,casetop); // U2
 };
-module R1(){translate([8.075000,9.400000,0.800000])children();}
+module R1(){translate([9.400000,-8.900000,0.800000])rotate([0,0,-90.000000])children();}
 module part_R1(part=true,hole=false,block=false,punch=false)
 {
-translate([8.075000,9.400000,0.800000])m3(part,hole,block,punch,casetop); // R10
+translate([9.400000,-8.900000,0.800000])rotate([0,0,-90.000000])m3(part,hole,block,punch,casetop); // R10
 };
-module C16(){translate([13.400000,16.500000,0.800000])rotate([0,0,180.000000])children();}
+module C16(){translate([16.500000,-14.225000,0.800000])rotate([0,0,90.000000])children();}
 module part_C16(part=true,hole=false,block=false,punch=false)
 {
-translate([13.400000,16.500000,0.800000])rotate([0,0,180.000000])m1(part,hole,block,punch,casetop); // C9
+translate([16.500000,-14.225000,0.800000])rotate([0,0,90.000000])m1(part,hole,block,punch,casetop); // C9
 };
-module R6(){translate([-20.725000,1.200000,0.800000])rotate([0,0,-90.000000])children();}
+module R6(){translate([1.200000,19.900000,0.800000])rotate([0,0,180.000000])children();}
 module part_R6(part=true,hole=false,block=false,punch=false)
 {
-translate([-20.725000,1.200000,0.800000])rotate([0,0,-90.000000])m3(part,hole,block,punch,casetop); // R10
+translate([1.200000,19.900000,0.800000])rotate([0,0,180.000000])m3(part,hole,block,punch,casetop); // R10
 };
-module C36(){translate([-1.325000,1.700000,0.800000])rotate([0,0,180.000000])children();}
+module C36(){translate([1.700000,0.500000,0.800000])rotate([0,0,90.000000])children();}
 module part_C36(part=true,hole=false,block=false,punch=false)
 {
-translate([-1.325000,1.700000,0.800000])rotate([0,0,180.000000])m1(part,hole,block,punch,casetop); // C9
+translate([1.700000,0.500000,0.800000])rotate([0,0,90.000000])m1(part,hole,block,punch,casetop); // C9
 };
-module R20(){translate([-17.825000,-9.000000,0.800000])children();}
+module R20(){translate([-9.000000,17.000000,0.800000])rotate([0,0,-90.000000])children();}
 module part_R20(part=true,hole=false,block=false,punch=false)
 {
-translate([-17.825000,-9.000000,0.800000])m22(part,hole,block,punch,casetop); // R20
+translate([-9.000000,17.000000,0.800000])rotate([0,0,-90.000000])m22(part,hole,block,punch,casetop); // R20
 };
-module FB4(){translate([5.775000,15.700000,0.800000])rotate([0,0,90.000000])children();}
+module FB4(){translate([15.700000,-6.600000,0.800000])children();}
 module part_FB4(part=true,hole=false,block=false,punch=false)
 {
-translate([5.775000,15.700000,0.800000])rotate([0,0,90.000000])m7(part,hole,block,punch,casetop); // FB3
+translate([15.700000,-6.600000,0.800000])m7(part,hole,block,punch,casetop); // FB3
 };
-module FB5(){translate([15.887500,17.000000,0.800000])children();}
+module FB5(){translate([17.000000,-16.712500,0.800000])rotate([0,0,-90.000000])children();}
 module part_FB5(part=true,hole=false,block=false,punch=false)
 {
-translate([15.887500,17.000000,0.800000])m7(part,hole,block,punch,casetop); // FB3
+translate([17.000000,-16.712500,0.800000])rotate([0,0,-90.000000])m7(part,hole,block,punch,casetop); // FB3
 };
-module R7(){translate([11.075000,16.775000,0.800000])rotate([0,0,90.000000])children();}
+module R7(){translate([16.775000,-11.900000,0.800000])children();}
 module part_R7(part=true,hole=false,block=false,punch=false)
 {
-translate([11.075000,16.775000,0.800000])rotate([0,0,90.000000])m3(part,hole,block,punch,casetop); // R10
+translate([16.775000,-11.900000,0.800000])m3(part,hole,block,punch,casetop); // R10
 };
-module Q1(){translate([-11.775000,-11.850000,0.800000])rotate([0,0,180.000000])children();}
+module Q1(){translate([-11.850000,10.950000,0.800000])rotate([0,0,90.000000])children();}
 module part_Q1(part=true,hole=false,block=false,punch=false)
 {
-translate([-11.775000,-11.850000,0.800000])rotate([0,0,180.000000])m23(part,hole,block,punch,casetop); // Q1
+translate([-11.850000,10.950000,0.800000])rotate([0,0,90.000000])m23(part,hole,block,punch,casetop); // Q1
 };
-module C12(){translate([8.100000,8.200000,0.800000])children();}
+module C12(){translate([8.200000,-8.925000,0.800000])rotate([0,0,-90.000000])children();}
 module part_C12(part=true,hole=false,block=false,punch=false)
 {
-translate([8.100000,8.200000,0.800000])m1(part,hole,block,punch,casetop); // C9
+translate([8.200000,-8.925000,0.800000])rotate([0,0,-90.000000])m1(part,hole,block,punch,casetop); // C9
 };
-module C2(){translate([3.650000,15.200000,0.800000])rotate([0,0,90.000000])children();}
+module C2(){translate([15.200000,-4.475000,0.800000])children();}
 module part_C2(part=true,hole=false,block=false,punch=false)
 {
-translate([3.650000,15.200000,0.800000])rotate([0,0,90.000000])m5(part,hole,block,punch,casetop); // C5
+translate([15.200000,-4.475000,0.800000])m5(part,hole,block,punch,casetop); // C5
 };
 // Parts to go on PCB (top)
 module parts_top(part=false,hole=false,block=false,punch=false){
@@ -541,15 +541,15 @@ part_C2(part,hole,block,punch);
 }
 
 parts_top=78;
-module J5(){translate([-8.825000,10.000000,0.000000])rotate([0,0,180.000000])rotate([180,0,0])children();}
+module J5(){translate([10.000000,8.000000,0.000000])rotate([0,0,90.000000])rotate([180,0,0])children();}
 module part_J5(part=true,hole=false,block=false,punch=false)
 {
 };
-module P1(){translate([-14.325000,13.000000,0.000000])rotate([0,0,180.000000])rotate([180,0,0])children();}
+module P1(){translate([13.000000,13.500000,0.000000])rotate([0,0,90.000000])rotate([180,0,0])children();}
 module part_P1(part=true,hole=false,block=false,punch=false)
 {
 };
-module J7(){translate([-5.095000,-11.365000,0.000000])rotate([0,0,180.000000])rotate([180,0,0])children();}
+module J7(){translate([-11.365000,4.270000,0.000000])rotate([0,0,90.000000])rotate([180,0,0])children();}
 module part_J7(part=true,hole=false,block=false,punch=false)
 {
 };
