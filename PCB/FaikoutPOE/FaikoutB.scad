@@ -1,6 +1,6 @@
 // Generated case design for FaikoutPOE/Faikout.kicad_pcb
 // By https://github.com/revk/PCBCase
-// Generated 2026-06-19 12:30:39
+// Generated 2026-06-19 13:33:44
 // title:	Faikout
 //
 
@@ -775,7 +775,7 @@ if(hole)
 
 module m19(part=false,hole=false,block=false,punch=false,height)
 { // J1
-if(part)
+if(punch)
 {
   translate([-6.95,-5.3,-2.75])cube([13.9,1.5,2.75]);
   translate([-6.45,-5.3,-2.75])cube([12.9,7.9,2.75]);
