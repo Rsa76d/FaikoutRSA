@@ -1,8 +1,7 @@
 // Generated case design for FaikoutPOE/Faikout.kicad_pcb
 // By https://github.com/revk/PCBCase
-// Generated 2026-06-18 13:38:23
+// Generated 2026-06-19 12:30:39
 // title:	Faikout
-// date:	${CURRENT_DATE}
 //
 
 // Globals
@@ -11,8 +10,11 @@ lip=3.000000;
 lipa=0;
 lipt=1;
 casewall=3.000000;
-casebottom=2.900000;
+casebottom=3.000000;
+module casebottomscad(){};
 casetop=18.000000;
+module casetopscad(){};
+casetopbump=0.000000;
 bottomthickness=0.000000;
 topthickness=0.000000;
 fit=0.000000;
@@ -24,26 +26,26 @@ nohull=false;
 hullcap=1.000000;
 hulledge=1.000000;
 useredge=false;
+dateh=3.000000;
+date="2026-06-18";
 datex=0.000000;
 datey=0.000000;
 datet=0.500000;
-dateh=3.000000;
-datea=90;
-date="2026-06-18";
+datea=0;
 datef="OCRB";
-logox=5.000000;
-logoy=0.000000;
-logot=0.500000;
 logoh=10.000000;
-logoa=90;
 logo="A";
+logox=0.000000;
+logoy=5.000000;
+logot=0.500000;
+logoa=0;
 logof="AJK";
-namex=-10.000000;
-namey=0.000000;
-namet=0.500000;
 nameh=5.000000;
-namea=90;
 name="Faikout";
+namex=0.000000;
+namey=-10.000000;
+namet=0.500000;
+namea=0;
 namef="OCRB";
 spacing=52.000000;
 pcbwidth=36.000000;
@@ -679,7 +681,7 @@ if(part)
 
 module m12(part=false,hole=false,block=false,punch=false,height)
 { // RevK:Ag970XX-FL Ag97000_Detailed
-if(part)
+if(punch)
 {
 	//b(28-1.78,5.7,-1.5,56,14,1.6); // PCB
     b(28-1.78,5.7,-1.5-1.4,58,15.52,7.24); // Space
@@ -804,7 +806,7 @@ if(hole)
 	{
 		b(0,-30,4,12,50,8); // Plug
 		b(0,-30,2,6,50,3); // Plug
-		b(0,-30,0,3.5,50,3); // Plug
+		rotate([15,0,0])b(0,-29,2.5,3.5,50,3); // Plug
 	}
 }
 }
@@ -874,6 +876,15 @@ module solid_case(d=0)
                 translate([0,0,-casebottom])pcb_hulled(height,casewall-edge);
                 translate([0,0,edge-casebottom])pcb_hulled(height-edge*2,casewall);
         }
+}
+
+module top_bump()
+{ // Bump on top of case
+	minkowski()
+	{
+		translate([0,0,casetop+pcbthickness-edge])bump(casetopbump,casewall-edge);
+	        cylinder(r1=edge,r2=0,h=edge);
+	}
 }
 
 module preview()
@@ -1131,15 +1142,30 @@ module pcb_pos()
 
 module top()
 {
-	top_pos()difference()
+	top_pos()
 	{
-		union()
+		difference()
 		{
-			top_body();
-			top_edge();
+			union()
+			{
+				top_body();
+				top_edge();
+			}
+			parts_space();
+			pcb_pos()pcb(height,r=margin);
+			top_text();
 		}
-		parts_space();
-		pcb_pos()pcb(height,r=margin);
+		difference()
+		{
+			casetopscad();
+			top_text();
+		}
+		if(casetopbump) difference()
+		{
+			top_bump();
+			parts_space();
+			top_text(casetopbump);
+		}
 	}
 }
 
@@ -1190,42 +1216,48 @@ module bottom_pos()
 
 module bottom()
 {
-	bottom_pos()difference()
+	bottom_pos()
 	{
-		union()
+		difference()
 		{
-        		bottom_body();
-        		bottom_edge();
+			union()
+			{
+        			bottom_body();
+        			bottom_edge();
+			}
+			parts_space();
+			pcb(height,r=margin);
+			bottom_text();
 		}
-		parts_space();
-		pcb(height,r=margin);
+		difference()
+		{
+			casebottomscad();
+			bottom_text();
+		}
 	}
 }
 
-module datecode()
+
+module bottom_text(offset=0)
 {
-	minkowski()
+	if(dateh)minkowski()
 	{
-		translate([datex,datey,-1])rotate(datea)scale([-1,1])linear_extrude(1)text(date,size=dateh,halign="center",valign="center",font=datef);
+		translate([datex,datey,-casebottom-offset-1])rotate(datea)scale([-1,1])linear_extrude(1)text(date,size=dateh,halign="center",valign="center",font=datef);
 		cylinder(d1=datet,d2=0,h=datet,$fn=6);
 	}
 }
 
-module logocode()
+module top_text(offset=0)
 {
-	minkowski()
+	if(logoh)minkowski()
 	{
-		translate([logox,logoy,-1])rotate(logoa)scale([-1,1])linear_extrude(1)text(logo,size=logoh,halign="center",valign="center",font=logof);
-		cylinder(d1=logot,d2=0,h=logot,$fn=6);
+		translate([logox,logoy,pcbthickness+casetop+offset-datet])rotate(logoa)linear_extrude(1)text(logo,size=logoh,halign="center",valign="center",font=logof);
+		cylinder(d1=0,d2=logot,h=logot,$fn=6);
+	}
+	if(nameh)minkowski()
+	{
+		translate([namex,namey,pcbthickness+casetop+offset-datet])rotate(namea)linear_extrude(1)text(name,size=nameh,halign="center",valign="center",font=namef);
+		cylinder(d1=0,d2=namet,h=namet,$fn=6);
 	}
 }
-
-module namecode()
-{
-	minkowski()
-	{
-		translate([namex,namey,-1])rotate(namea)scale([-1,1])linear_extrude(1)text(name,size=nameh,halign="center",valign="center",font=namef);
-		cylinder(d1=namet,d2=0,h=namet,$fn=6);
-	}
-}
-difference(){bottom();datecode();}
+bottom();

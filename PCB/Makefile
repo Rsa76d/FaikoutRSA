@@ -15,10 +15,10 @@ Faikout/FaikoutT.scad: Faikout/Faikout.kicad_pcb PCBCase/case
 	PCBCase/case -o $@ $< --edge=2 --top=7 --bottom=3 --pcb=2 --split-file --lip-type=1 --logo-angle=-90 --logo-x=-5 --name=""
 
 FaikoutETH/FaikoutT.scad: FaikoutETH/Faikout.kicad_pcb PCBCase/case
-	PCBCase/case -o $@ $< --edge=2 --top=10.1 --bottom=2.9 --pcb=2 --split-file --lip-type=1 --logo-angle=90 --logo-x=5 --name-angle=90 --name-x=-10 --name-y=0 --date-angle=90
+	PCBCase/case -o $@ $< --edge=2 --top=10 --bottom=3 --pcb=2 --split-file --lip-type=1 --logo-y=5
 
 FaikoutPOE/FaikoutT.scad: FaikoutPOE/Faikout.kicad_pcb PCBCase/case
-	PCBCase/case -o $@ $< --edge=2 --top=18.1 --bottom=2.9 --pcb=2 --split-file --lip-type=1 --logo-angle=90 --logo-x=5 --name-angle=90 --name-x=-10 --name-y=0 --date-angle=90
+	PCBCase/case -o $@ $< --edge=2 --top=18 --bottom=3 --pcb=2 --split-file --lip-type=1 --logo-y=5
 
 PCBCase/clean: PCBCase/clean.c
 	make -C PCBCase
