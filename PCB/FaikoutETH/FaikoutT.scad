@@ -1,6 +1,6 @@
 // Generated case design for FaikoutETH/Faikout.kicad_pcb
 // By https://github.com/revk/PCBCase
-// Generated 2026-06-20 12:01:06
+// Generated 2026-06-20 13:25:15
 // title:	Faikout
 // company:	Adrian Kennard, Andrews & Arnold Ltd
 //
@@ -30,14 +30,14 @@ useredge=false;
 dateh=3.000000;
 date="2026-06-19";
 datex=0.000000;
-datey=1.000000;
+datey=2.500000;
 datet=0.500000;
 datea=0;
 datef="OCRB";
 urlh=3.000000;
 url="shop.revk.uk";
 urlx=0.000000;
-urly=-3.000000;
+urly=-2.500000;
 urlt=0.500000;
 urla=0;
 urlf="OCRB";
@@ -776,7 +776,7 @@ module top_half(fit=0)
 			}
             		difference()
             		{
-                		pcb_hulled(lip,casewall);
+                		pcb_hulled(lip,casewall+1);
 				if(snap)
                         	{
 					hull()
@@ -1008,18 +1008,21 @@ module top()
 			{
 				top_body();
 				top_edge();
-				top_bump();
 			}
 			parts_space();
 			pcb_pos()pcb(height,r=margin);
 			top_text();
-			if(casetopbump)
-				top_text(casetopbump);
 		}
 		difference()
 		{
 			casetopscad();
 			top_text();
+		}
+		if(casetopbump)difference()
+		{
+			top_bump();
+                        parts_space();
+                        top_text(casetopbump);
 		}
 	}
 }

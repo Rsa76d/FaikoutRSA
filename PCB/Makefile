@@ -1,4 +1,4 @@
-MAKEFLAGS += --silent
+MAKEFLAGS += --silent -j20
 
 all: png stl */README.md
 
@@ -27,7 +27,9 @@ PCBCase/case: PCBCase/case.c
 	make -C PCBCase
 
 %.png:	%.kicad_pcb PCBCase/clean PCBCase/render
+	echo "Making $@"
 	PCBCase/render $<
 
 %/README.md: %/*.kicad_pcb %/*.stl PCBCase/readme
+	echo "Making $@"
 	PCBCase/readme $@
