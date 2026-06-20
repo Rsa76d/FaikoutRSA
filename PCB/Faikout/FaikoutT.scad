@@ -1,6 +1,6 @@
 // Generated case design for Faikout/Faikout.kicad_pcb
 // By https://github.com/revk/PCBCase
-// Generated 2026-06-19 13:32:59
+// Generated 2026-06-20 08:49:42
 // title:	Faikout
 // company:	Adrian Kennard, Andrews & Arnold Ltd
 //
@@ -742,7 +742,7 @@ module top_edge()
 
 module top_pos()
 { // Position for plotting bottom
-	translate([0,0,pcbthickness+casetop])rotate([180,0,0])children();
+	translate([0,0,pcbthickness+casetop+casetopbump])rotate([180,0,0])children();
 }
 
 module pcb_pos()
@@ -760,21 +760,18 @@ module top()
 			{
 				top_body();
 				top_edge();
+				top_bump();
 			}
 			parts_space();
 			pcb_pos()pcb(height,r=margin);
 			top_text();
+			if(casetopbump)
+				top_text(casetopbump);
 		}
 		difference()
 		{
 			casetopscad();
 			top_text();
-		}
-		if(casetopbump) difference()
-		{
-			top_bump();
-			parts_space();
-			top_text(casetopbump);
 		}
 	}
 }
