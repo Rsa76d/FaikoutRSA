@@ -1,6 +1,6 @@
 // Generated case design for Faikout/Faikout.kicad_pcb
 // By https://github.com/revk/PCBCase
-// Generated 2026-06-20 08:49:42
+// Generated 2026-06-20 10:49:33
 // title:	Faikout
 // company:	Adrian Kennard, Andrews & Arnold Ltd
 //
@@ -30,10 +30,17 @@ useredge=false;
 dateh=3.000000;
 date="2026-06-14";
 datex=0.000000;
-datey=0.000000;
+datey=3.000000;
 datet=0.500000;
 datea=0;
 datef="OCRB";
+urlh=3.000000;
+url="shop.revk.uk";
+urlx=0.000000;
+urly=-3.000000;
+urlt=0.500000;
+urla=0;
+urlf="OCRB";
 logoh=10.000000;
 logo="A";
 logox=-5.000000;
@@ -490,7 +497,7 @@ module solid_case(d=0)
 
 module top_bump()
 { // Bump on top of case
-	minkowski()
+	if(casetopbump)minkowski()
 	{
 		translate([0,0,casetop+pcbthickness-edge])bump(casetopbump,casewall-edge);
 	        cylinder(r1=edge,r2=0,h=edge);
@@ -851,6 +858,11 @@ module bottom_text(offset=0)
 	{
 		translate([datex,datey,-casebottom-offset-1])rotate(datea)scale([-1,1])linear_extrude(1)text(date,size=dateh,halign="center",valign="center",font=datef);
 		cylinder(d1=datet,d2=0,h=datet,$fn=6);
+	}
+	if(urlh)minkowski()
+	{
+		translate([urlx,urly,-casebottom-offset-1])rotate(urla)scale([-1,1])linear_extrude(1)text(url,size=urlh,halign="center",valign="center",font=urlf);
+		cylinder(d1=urlt,d2=0,h=urlt,$fn=6);
 	}
 }
 

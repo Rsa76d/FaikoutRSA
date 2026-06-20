@@ -12,7 +12,7 @@ stl: 	Faikout/Faikout[TCB].stl
 png:	$(patsubst %.kicad_pcb,%.png,$(wildcard */*.kicad_pcb))
 
 Faikout/FaikoutT.scad: Faikout/Faikout.kicad_pcb PCBCase/case
-	PCBCase/case -o $@ $< --edge=2 --top=7 --bottom=3 --pcb=2 --split-file --lip-type=1 --logo-angle=-90 --logo-x=-5 --name=""
+	PCBCase/case -o $@ $< --edge=2 --top=7 --bottom=3 --pcb=2 --split-file --lip-type=1 --logo-angle=-90 --logo-x=-5 --name="" --date-y=3 --url-y=-3
 
 FaikoutETH/FaikoutT.scad: FaikoutETH/Faikout.kicad_pcb PCBCase/case
 	PCBCase/case -o $@ $< --edge=2 --top=7 --bottom=3 --pcb=2 --split-file --logo-x=-8 --logo-y=-11 --logo-height=8 --name-y=10 --bump=6 --top-bump=4
