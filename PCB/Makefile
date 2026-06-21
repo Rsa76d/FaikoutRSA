@@ -15,7 +15,7 @@ Faikout/FaikoutT.scad: Faikout/Faikout.kicad_pcb PCBCase/case
 	PCBCase/case -o $@ $< --edge=2 --top=7 --bottom=3 --pcb=2 --split-file --lip-type=1 --logo-angle=-90 --logo-x=-5 --name="" --date-y=3 --url-y=-3
 
 FaikoutETH/FaikoutT.scad: FaikoutETH/Faikout.kicad_pcb PCBCase/case
-	PCBCase/case -o $@ $< --edge=2 --top=7 --bottom=3 --pcb=2 --split-file --logo-x=-8 --logo-y=-11 --logo-height=8 --name-y=10 --bump=6 --top-bump=4
+	PCBCase/case -o $@ $< --edge=2 --top=7 --bottom=3 --pcb=2 --split-file --logo-x=11 --logo-y=-8 --logo-height=8 --bump=6 --top-bump=4 --logo-angle=90 --name-angle=90 --name-x=-10 --name-y=0
 
 FaikoutPOE/FaikoutT.scad: FaikoutPOE/Faikout.kicad_pcb PCBCase/case
 	PCBCase/case -o $@ $< --edge=2 --top=18 --bottom=3 --pcb=2 --split-file --logo-y=5
