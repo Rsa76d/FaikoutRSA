@@ -1,6 +1,6 @@
 // Generated case design for FaikoutPOE/Faikout.kicad_pcb
 // By https://github.com/revk/PCBCase
-// Generated 2026-06-20 13:25:15
+// Generated 2026-06-22 10:28:34
 // title:	Faikout
 //
 
@@ -690,18 +690,16 @@ module m12(part=false,hole=false,block=false,punch=false,height)
 { // RevK:Ag970XX-FL Ag97000_Detailed
 if(punch)
 {
-	//b(28-1.78,5.7,-1.5,56,14,1.6); // PCB
-    b(28-1.78,5.7,-1.5-1.4,58,15.52,7.24); // Space
-    b(28-1.78+1.03,5.7,-1.5-1.4,10.3,15.52,12.5); // Space
-    
+   b(28-1.78,6.5,-1.5-1.4,58,16,7.24); // Space
+   b(30.0345,6.5,-1.5-1.4,10.3,16,14.5); // Space
 }
 if(hole)
 {
-	for(x=[0,1,2,3,4,5,17,18,19,20])
-	{
-		translate([x*2.54,-4.5,1.5])rotate([-90,0,0])cylinder(r1=0.5,r2=1,h=2.5);
-		translate([x*2.54,0,-3])cylinder(r1=0.5,r2=1,h=2.5);
-	}
+   for(x=[0,1,2,3,4,5,17,18,19,20])
+   {
+      translate([x*2.54,0,-2.86-1.4])cylinder(r1=0.5,r2=1,h=2.5);
+      translate([x*2.54,-4.5,1.5])rotate([-90,0,0])cylinder(r1=0.5,r2=1,h=2.5);
+   }
 }
 }
 
@@ -806,15 +804,12 @@ if(punch)
     translate([-3.57+x*1.02-0.2,6.5,0])cube([0.4,1.56,0.2]);
     rotate([-10,0,0])translate([-3.57+x*1.02-0.2,-5,5.8])cube([0.4,6,0.2]);
   }
-}
-if(hole)
-{
-  translate([0,0,-4])
-  {
-     b(0,-25,4,12,50,8); // Plug
-     b(0,-25,2,6,50,3); // Plug
-     rotate([15,0,0])b(0,-29,2.5,3.5,50,3); // Plug
-  }
+   translate([0,0,-4])
+   {
+      b(0,-30,4,12,50,8); // Plug
+      b(0,-30,2,6,50,3); // Plug
+      rotate([15,0,0])b(0,-9,2.5,3.5,10,3); // Plug
+   }
 }
 }
 
@@ -1016,27 +1011,27 @@ module case_wall()
 
 module top_side_hole()
 {
-	difference()
+	intersection()
 	{
-		intersection()
+		union()
 		{
-			parts_top(hole=true,punch=true);
-			case_wall();
+			parts_top(hole=true,punch=false);
+			pcb();
 		}
-		translate([0,0,-casebottom])pcb_hulled(height,casewall);
+		case_wall();
 	}
 }
 
 module bottom_side_hole()
 {
-	difference()
+	intersection()
 	{
-		intersection()
+		union()
 		{
-			parts_bottom(hole=true,punch=true);
-			case_wall();
+			parts_bottom(hole=true,punch=false);
+			pcb();
 		}
-		translate([0,0,edge-casebottom])pcb_hulled(height-edge*2,casewall);
+		case_wall();
 	}
 }
 
@@ -1080,11 +1075,11 @@ module top_cut(fit=0)
 			bottom_side_hole();
 			pyramid();
 		}
-			minkowski()
-			{
-				bottom_side_hole();
-				rotate([0,0,45])translate([0,0,-height])cylinder(r=margin,h=height,$fn=4);
-			}
+		minkowski()
+		{
+			bottom_side_hole();
+			rotate([0,0,45])translate([0,0,-height])cylinder(r=margin,h=height,$fn=4);
+		}
 	}
 }
 
