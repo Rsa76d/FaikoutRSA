@@ -1,6 +1,6 @@
 // Generated case design for FaikoutETH/Faikout.kicad_pcb
 // By https://github.com/revk/PCBCase
-// Generated 2026-06-21 10:22:25
+// Generated 2026-06-22 09:03:38
 // title:	Faikout
 // company:	Adrian Kennard, Andrews & Arnold Ltd
 //
@@ -701,12 +701,12 @@ if(punch)
 }
 if(hole)
 {
-  translate([0,0,-4])
-  {
-     b(0,-25,4,12,50,8); // Plug
-     b(0,-25,2,6,50,3); // Plug
-     rotate([15,0,0])b(0,-29,2.5,3.5,50,3); // Plug
-  }
+   translate([0,0,-4])
+   {
+      b(0,-30,4,12,50,8); // Plug
+      b(0,-30,2,6,50,3); // Plug
+      rotate([15,0,0])b(0,-9,2.5,3.5,10,3); // Plug
+   }
 }
 }
 
@@ -867,27 +867,27 @@ module case_wall()
 
 module top_side_hole()
 {
-	difference()
+	intersection()
 	{
-		intersection()
+		union()
 		{
-			parts_top(hole=true,punch=true);
-			case_wall();
+			parts_top(hole=true,punch=false);
+			pcb();
 		}
-		translate([0,0,-casebottom])pcb_hulled(height,casewall);
+		case_wall();
 	}
 }
 
 module bottom_side_hole()
 {
-	difference()
+	intersection()
 	{
-		intersection()
+		union()
 		{
-			parts_bottom(hole=true,punch=true);
-			case_wall();
+			parts_bottom(hole=true,punch=false);
+			pcb();
 		}
-		translate([0,0,edge-casebottom])pcb_hulled(height-edge*2,casewall);
+		case_wall();
 	}
 }
 
@@ -931,11 +931,11 @@ module top_cut(fit=0)
 			bottom_side_hole();
 			pyramid();
 		}
-			minkowski()
-			{
-				bottom_side_hole();
-				rotate([0,0,45])translate([0,0,-height])cylinder(r=margin,h=height,$fn=4);
-			}
+		minkowski()
+		{
+			bottom_side_hole();
+			rotate([0,0,45])translate([0,0,-height])cylinder(r=margin,h=height,$fn=4);
+		}
 	}
 }
 
