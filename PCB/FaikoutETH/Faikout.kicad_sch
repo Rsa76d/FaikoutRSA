@@ -11649,17 +11649,6 @@
 				)
 			)
 		)
-		(property "Sim.Enable" "0"
-			(at 262.255 170.815 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(instances
 			(project "Faikout"
 				(path "/46c350bb-7de4-4e81-aafd-4af55e37aab0"
@@ -12536,7 +12525,7 @@
 				)
 			)
 		)
-		(property "MPN" "C106225"
+		(property "MPN" "C138117"
 			(at 107.95 167.64 0)
 			(hide yes)
 			(show_name no)
@@ -14540,17 +14529,6 @@
 				)
 			)
 		)
-		(property "Sim.Enable" "0"
-			(at 259.08 173.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(instances
 			(project "Faikout"
 				(path "/46c350bb-7de4-4e81-aafd-4af55e37aab0"
@@ -15143,17 +15121,6 @@
 			)
 		)
 		(property "Description" ""
-			(at 262.255 177.165 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Enable" "0"
 			(at 262.255 177.165 0)
 			(hide yes)
 			(show_name no)
@@ -16595,17 +16562,6 @@
 				)
 			)
 		)
-		(property "Sim.Enable" "0"
-			(at 260.35 173.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(instances
 			(project "Faikout"
 				(path "/46c350bb-7de4-4e81-aafd-4af55e37aab0"
@@ -17152,17 +17108,6 @@
 			)
 		)
 		(property "Description" ""
-			(at 265.43 173.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Enable" "0"
 			(at 265.43 173.99 0)
 			(hide yes)
 			(show_name no)
@@ -17724,7 +17669,7 @@
 				)
 			)
 		)
-		(property "MPN" "C106225"
+		(property "MPN" "C138117"
 			(at 232.41 105.41 90)
 			(hide yes)
 			(show_name no)
@@ -19160,7 +19105,7 @@
 				)
 			)
 		)
-		(property "MPN" "C106225"
+		(property "MPN" "C138117"
 			(at 109.22 34.29 90)
 			(hide yes)
 			(show_name no)
@@ -19652,7 +19597,7 @@
 				)
 			)
 		)
-		(property "MPN" "C106225"
+		(property "MPN" "C138117"
 			(at 207.01 111.125 90)
 			(hide yes)
 			(show_name no)
@@ -20200,6 +20145,17 @@
 				)
 			)
 		)
+		(property "MPN" "C87143"
+			(at 76.2 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "4138bc00-e91e-4251-9e34-8af1ae1fcccf")
 		)
@@ -20543,7 +20499,7 @@
 				)
 			)
 		)
-		(property "MPN" "C106225"
+		(property "MPN" "C138117"
 			(at 76.2 73.66 90)
 			(hide yes)
 			(show_name no)
