@@ -1,6 +1,6 @@
 // Generated case design for FaikoutETH/Faikout.kicad_pcb
 // By https://github.com/revk/PCBCase
-// Generated 2026-06-23 11:27:45
+// Generated 2026-06-24 15:48:02
 // title:	Faikout
 // company:	Adrian Kennard, Andrews & Arnold Ltd
 //
@@ -700,7 +700,7 @@ if(punch)
   }
    translate([0,0,-4])
    {
-      b(0,-30,4,12,50,8); // Plug
+      b(0,-30,4,12,50,6.6); // Plug
       b(0,-30,2,6,50,3); // Plug
       rotate([15,0,0])b(0,-9,2.5,3.5,10,3); // Plug
    }
