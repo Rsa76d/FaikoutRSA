@@ -7721,6 +7721,42 @@
 						)
 					)
 				)
+				(pin passive line
+					(at 0 13.97 270)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "S1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -13.97 90)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "S2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
 			(embedded_fonts no)
 		)
@@ -9372,6 +9408,12 @@
 		(uuid "67a1435b-044c-41d5-8816-007e77d82bea")
 	)
 	(junction
+		(at 87.63 177.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "69f0eba4-7ba1-4b7d-b9cc-4cde372e214c")
+	)
+	(junction
 		(at 171.45 30.48)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -9462,12 +9504,6 @@
 		(uuid "941f6a8d-df8f-48c6-9073-1b5f797b8c8d")
 	)
 	(junction
-		(at 207.01 43.18)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "98d36e04-b3c4-4680-bc6e-c519cfe97c68")
-	)
-	(junction
 		(at 130.81 22.86)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -9484,6 +9520,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a9bd99f1-a571-4633-90cb-fe16e7a03e0e")
+	)
+	(junction
+		(at 87.63 185.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "aaf2e3cf-7048-4ff2-b1f6-f44e1350aac5")
 	)
 	(junction
 		(at 135.89 177.8)
@@ -9736,6 +9778,10 @@
 	(no_connect
 		(at 44.45 72.39)
 		(uuid "686ec73b-4521-4065-bbda-86da7024200f")
+	)
+	(no_connect
+		(at 31.75 143.51)
+		(uuid "78e4d50e-377b-4608-b970-9e17c7a3567d")
 	)
 	(no_connect
 		(at 233.68 43.18)
@@ -10980,16 +11026,6 @@
 			(type default)
 		)
 		(uuid "b5d8c819-a051-4b8e-9ffa-11d56258e429")
-	)
-	(wire
-		(pts
-			(xy 207.01 43.18) (xy 210.82 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b88bc295-e749-4f9f-98b0-160d78cbdd1a")
 	)
 	(wire
 		(pts
@@ -12372,6 +12408,30 @@
 		(uuid "7212c117-33d7-4faf-9194-42f8750d4c91")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 271.2686 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "S21DC"
+		(shape passive)
+		(at 231.14 146.05 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "75392635-d755-4f47-a676-e92dce5760b5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 238.687 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14351,83 +14411,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 377.19 195.58 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "18a4c9fe-9210-4dc0-a070-b81e642b9fba")
-		(property "Reference" "#PWR070"
-			(at 370.84 195.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "S21GND"
-			(at 369.824 195.834 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 377.19 195.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 377.19 195.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 377.19 195.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "883a6f19-5631-4ff8-a9c6-5dda45eeb9e8")
-		)
-		(instances
-			(project "Faikout"
-				(path "/825c70b0-4860-42b7-97dc-86bfa46e06fd"
-					(reference "#PWR070")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "RevK:BSS138PS")
 		(at 241.3 132.08 0)
 		(mirror y)
@@ -15520,6 +15503,85 @@
 			(project "Faikout"
 				(path "/825c70b0-4860-42b7-97dc-86bfa46e06fd"
 					(reference "#PWR039")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 87.63 185.42 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "377f26c9-1e85-475f-b4f1-2ac32addc87b")
+		(property "Reference" "#FLG03"
+			(at 85.725 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "POE-"
+			(at 83.82 185.4199 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 87.63 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 87.63 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 87.63 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "611a116e-834e-4d93-84e5-175ad5ebb5b9")
+		)
+		(instances
+			(project "Faikout"
+				(path "/825c70b0-4860-42b7-97dc-86bfa46e06fd"
+					(reference "#FLG03")
 					(unit 1)
 				)
 			)
@@ -16945,84 +17007,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 210.82 43.18 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "4f8bc8ec-86d1-4f52-8398-4c272c4f82ec")
-		(property "Reference" "#FLG07"
-			(at 212.725 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 210.185 40.767 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 210.82 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 210.82 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 217.3774 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "24045af7-8d1d-497b-81e9-ab7b37ff41f7")
-		)
-		(instances
-			(project "Faikout"
-				(path "/825c70b0-4860-42b7-97dc-86bfa46e06fd"
-					(reference "#FLG07")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:Fuse_Small")
 		(at 116.84 177.8 180)
 		(unit 1)
@@ -18058,6 +18042,83 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 31.75 171.45 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6f89de6f-86e8-4b42-b76a-665e4d96180d")
+		(property "Reference" "#PWR030"
+			(at 31.75 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 26.924 172.974 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 31.75 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 31.75 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 31.75 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "05072f72-bfd5-4850-a2a6-c74fcaf9ccb7")
+		)
+		(instances
+			(project "Faikout"
+				(path "/825c70b0-4860-42b7-97dc-86bfa46e06fd"
+					(reference "#PWR030")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 143.51 39.37 0)
 		(unit 1)
@@ -18690,6 +18751,83 @@
 			(project "Faikout"
 				(path "/825c70b0-4860-42b7-97dc-86bfa46e06fd"
 					(reference "C36")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 215.9 146.05 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7e427aee-f939-40e5-82f7-991df9b59352")
+		(property "Reference" "#FLG04"
+			(at 215.9 144.145 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "S21GND"
+			(at 215.9 141.478 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 215.9 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 215.9 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 215.9 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "376c5a2d-9cda-4386-aee9-64c5bec255d0")
+		)
+		(instances
+			(project "Faikout"
+				(path "/825c70b0-4860-42b7-97dc-86bfa46e06fd"
+					(reference "#FLG04")
 					(unit 1)
 				)
 			)
@@ -20741,7 +20879,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm"
+		(property "Footprint" "RevK:Crystal-3.2x2.5"
 			(at 102.87 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -22016,6 +22154,83 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 231.14 146.05 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b0b45e89-3d4b-4852-b0c5-aceb8557d13f")
+		(property "Reference" "#FLG05"
+			(at 229.235 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "S21DC"
+			(at 224.79 146.05 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 231.14 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 231.14 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 231.14 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fd640001-7316-4e2a-ad90-5791e787d0e1")
+		)
+		(instances
+			(project "Faikout"
+				(path "/825c70b0-4860-42b7-97dc-86bfa46e06fd"
+					(reference "#FLG05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 66.04 36.83 180)
 		(unit 1)
@@ -22686,6 +22901,85 @@
 			(project "Faikout"
 				(path "/825c70b0-4860-42b7-97dc-86bfa46e06fd"
 					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 87.63 177.8 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c15cee97-944b-4ccd-bd61-6aaeed2838eb")
+		(property "Reference" "#FLG02"
+			(at 85.725 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "POE+"
+			(at 83.82 177.7999 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 87.63 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 87.63 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 87.63 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "19974591-555a-4ae2-8d6b-f70bcb05660e")
+		)
+		(instances
+			(project "Faikout"
+				(path "/825c70b0-4860-42b7-97dc-86bfa46e06fd"
+					(reference "#FLG02")
 					(unit 1)
 				)
 			)
@@ -24484,7 +24778,7 @@
 				)
 			)
 		)
-		(property "Value" "VBUS"
+		(property "Value" "VDC"
 			(at 205.105 64.77 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24727,6 +25021,12 @@
 		(pin "4"
 			(uuid "733b2468-0771-4dab-9266-c0745d24f331")
 		)
+		(pin "S1"
+			(uuid "efd6ce40-67a0-4fb8-aae5-2816b8a2baf3")
+		)
+		(pin "S2"
+			(uuid "3426adf2-000a-4484-961a-2975dcd088f6")
+		)
 		(instances
 			(project "Faikout"
 				(path "/825c70b0-4860-42b7-97dc-86bfa46e06fd"
@@ -24966,6 +25266,83 @@
 			(project "Faikout"
 				(path "/825c70b0-4860-42b7-97dc-86bfa46e06fd"
 					(reference "#PWR078")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 215.9 146.05 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "df9dddff-6d7f-4948-9931-5a9bd0c95db7")
+		(property "Reference" "#PWR065"
+			(at 215.9 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "S21GND"
+			(at 215.9 149.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 215.9 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 215.9 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 215.9 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "181b5638-a76b-4229-a59c-3c1206bce69e")
+		)
+		(instances
+			(project "Faikout"
+				(path "/825c70b0-4860-42b7-97dc-86bfa46e06fd"
+					(reference "#PWR065")
 					(unit 1)
 				)
 			)
