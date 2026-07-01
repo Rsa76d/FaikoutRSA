@@ -17589,6 +17589,17 @@
 				)
 			)
 		)
+		(property "MPN" "C232847"
+			(at 33.02 181.61 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "4"
 			(uuid "bfea4f5b-298a-4a5c-8b9c-713c89fd7d86")
 		)
@@ -19626,6 +19637,28 @@
 				)
 			)
 		)
+		(property "MPN" "C118298"
+			(at 201.93 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rotation Offset" "90"
+			(at 201.93 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "892c67d2-4276-4b22-b68e-a0e56d666d0e")
 		)
@@ -21529,6 +21562,28 @@
 			)
 		)
 		(property "Description" "Optocoupler, Vce 70V, CTR 50-600%, Viso 3750V (RMS), SOP-4"
+			(at 201.93 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "MPN"
+			(at 201.93 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rotation Offset" "90"
 			(at 201.93 135.89 0)
 			(hide yes)
 			(show_name no)
@@ -26748,6 +26803,17 @@
 		)
 		(property "Description" "Miniature Glass Passivated Single-Phase Surface Mount Bridge Rectifiers, 280V Vrms, 0.5A If, TO-269AA"
 			(at 52.07 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "C232847"
+			(at 52.07 181.61 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
