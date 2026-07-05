@@ -21273,7 +21273,7 @@
 				)
 			)
 		)
-		(property "Rotation Offset" "90"
+		(property "Rotation Offset" "-90"
 			(at 139.7 71.12 0)
 			(hide yes)
 			(show_name no)
