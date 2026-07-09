@@ -726,7 +726,7 @@
         "uuid": "825c70b0-4860-42b7-97dc-86bfa46e06fd"
       }
     ],
-    "used_designators": "V1-6,PCB1",
+    "used_designators": "D10,V1-6,PCB1",
     "variants": []
   },
   "sheets": [

@@ -1,6 +1,6 @@
 // Generated case design for FaikoutPOE/Faikout.kicad_pcb
 // By https://github.com/revk/PCBCase
-// Generated 2026-07-01 14:48:52
+// Generated 2026-07-09 11:32:33
 // title:	Faikout
 //
 
@@ -27,7 +27,7 @@ hullcap=1.000000;
 hulledge=1.000000;
 useredge=false;
 dateh=3.000000;
-date="2026-07-01";
+date="2026-07-09";
 datex=0.000000;
 datey=2.500000;
 datet=0.500000;
@@ -160,10 +160,10 @@ module part_L14(part=true,hole=false,block=false,punch=false)
 {
 translate([-17.500000,-16.100000,0.800000])m2(part,hole,block,punch,casetop); // L19
 };
-module R10(){translate([3.280000,25.000000,0.800000])rotate([0,0,-90.000000])children();}
+module R10(){translate([3.280000,24.400000,0.800000])rotate([0,0,-90.000000])children();}
 module part_R10(part=true,hole=false,block=false,punch=false)
 {
-translate([3.280000,25.000000,0.800000])rotate([0,0,-90.000000])m3(part,hole,block,punch,casetop); // R5
+translate([3.280000,24.400000,0.800000])rotate([0,0,-90.000000])m3(part,hole,block,punch,casetop); // R5
 };
 module D21(){translate([-4.250000,8.000000,0.800000])rotate([0,0,180.000000])children();}
 module part_D21(part=true,hole=false,block=false,punch=false)
@@ -370,6 +370,11 @@ module part_U4(part=true,hole=false,block=false,punch=false)
 {
 translate([7.875000,14.600000,0.800000])m24(part,hole,block,punch,casetop); // U4
 };
+module D10(){translate([-6.300000,24.900000,0.800000])rotate([0,0,90.000000])children();}
+module part_D10(part=true,hole=false,block=false,punch=false)
+{
+translate([-6.300000,24.900000,0.800000])rotate([0,0,90.000000])m6(part,hole,block,punch,casetop); // D7 (back)
+};
 module R3(){translate([13.623000,-12.950000,0.800000])children();}
 module part_R3(part=true,hole=false,block=false,punch=false)
 {
@@ -405,10 +410,10 @@ module part_C16(part=true,hole=false,block=false,punch=false)
 {
 translate([12.400000,-22.000000,0.800000])rotate([0,0,180.000000])m0(part,hole,block,punch,casetop); // C9
 };
-module R6(){translate([3.980000,25.000000,0.800000])rotate([0,0,-90.000000])children();}
+module R6(){translate([3.980000,24.400000,0.800000])rotate([0,0,-90.000000])children();}
 module part_R6(part=true,hole=false,block=false,punch=false)
 {
-translate([3.980000,25.000000,0.800000])rotate([0,0,-90.000000])m3(part,hole,block,punch,casetop); // R5
+translate([3.980000,24.400000,0.800000])rotate([0,0,-90.000000])m3(part,hole,block,punch,casetop); // R5
 };
 module C36(){translate([14.575000,-9.000000,0.800000])children();}
 module part_C36(part=true,hole=false,block=false,punch=false)
@@ -528,6 +533,7 @@ part_D2(part,hole,block,punch);
 part_C15(part,hole,block,punch);
 part_J1(part,hole,block,punch);
 part_U4(part,hole,block,punch);
+part_D10(part,hole,block,punch);
 part_R3(part,hole,block,punch);
 part_C10(part,hole,block,punch);
 part_C34(part,hole,block,punch);
@@ -549,7 +555,7 @@ part_C12(part,hole,block,punch);
 part_C2(part,hole,block,punch);
 }
 
-parts_top=80;
+parts_top=81;
 module J5(){translate([7.500000,-0.500000,0.000000])rotate([0,0,180.000000])rotate([180,0,0])children();}
 module part_J5(part=true,hole=false,block=false,punch=false)
 {
