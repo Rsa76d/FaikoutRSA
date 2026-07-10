@@ -18884,7 +18884,7 @@
 				)
 			)
 		)
-		(property "MPN" "C7467262"
+		(property "MPN" "C138135"
 			(at 31.75 58.42 90)
 			(hide yes)
 			(show_name no)
@@ -19587,7 +19587,7 @@
 				)
 			)
 		)
-		(property "MPN" "C7467262"
+		(property "MPN" "C138135"
 			(at 25.4 58.42 90)
 			(hide yes)
 			(show_name no)
@@ -24499,7 +24499,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d068d49a-848f-4f47-8161-35541b10f80f")
@@ -26696,7 +26696,7 @@
 				)
 			)
 		)
-		(property "MPN" "C102690"
+		(property "MPN" "C106225"
 			(at 274.32 76.2 90)
 			(hide yes)
 			(show_name no)
