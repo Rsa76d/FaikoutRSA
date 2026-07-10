@@ -15462,6 +15462,17 @@
 				)
 			)
 		)
+		(property "MPN" "C270365"
+			(at 190.5 134.62 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "243d2980-25a2-42c4-8e18-a82bab929d7a")
 		)
@@ -19114,6 +19125,17 @@
 		)
 		(property "Description" "Resistor"
 			(at 213.36 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "C270365"
+			(at 213.36 134.62 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
