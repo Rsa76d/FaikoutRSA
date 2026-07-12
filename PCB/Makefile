@@ -18,7 +18,7 @@ FaikoutETH/FaikoutT.scad: FaikoutETH/Faikout.kicad_pcb PCBCase/case
 	PCBCase/case -o $@ $< --edge=2 --top=7 --bottom=3 --pcb=2 --split-file --logo-x=11 --logo-y=-8 --logo-height=8 --bump=6 --top-bump=4 --logo-angle=90 --name-angle=90 --name-x=-10 --name-y=0
 
 FaikoutPOE/FaikoutT.scad: FaikoutPOE/Faikout.kicad_pcb PCBCase/case
-	PCBCase/case -o $@ $< --edge=2 --top=12 --bottom=3 --pcb=2 --split-file --logo-y=5
+	PCBCase/case -o $@ $< --edge=2 --top=12 --bottom=3 --pcb=2 --split-file
 
 PCBCase/clean: PCBCase/clean.c
 	make -C PCBCase
