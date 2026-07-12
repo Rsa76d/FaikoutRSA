@@ -1,6 +1,6 @@
 // Generated case design for FaikoutPOE/Faikout.kicad_pcb
 // By https://github.com/revk/PCBCase
-// Generated 2026-07-12 12:09:28
+// Generated 2026-07-12 12:50:18
 // title:	Faikout
 //
 
@@ -560,7 +560,7 @@ module P3(){translate([6.000000,6.500000,0.000000])rotate([0,0,-90.000000])rotat
 module part_P3(part=true,hole=false,block=false,punch=false)
 {
 };
-module J5(){translate([-6.500000,2.500000,0.000000])rotate([0,0,-90.000000])rotate([180,0,0])children();}
+module J5(){translate([-6.500000,2.500000,0.000000])rotate([0,0,90.000000])rotate([180,0,0])children();}
 module part_J5(part=true,hole=false,block=false,punch=false)
 {
 };
