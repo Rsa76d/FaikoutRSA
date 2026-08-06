@@ -1,6 +1,6 @@
 // Generated case design for FaikoutETH/Faikout.kicad_pcb
-// By https://github.com/revk/PCBCase
-// Generated 2026-08-06 13:29:22
+// By https://codeberg.org/RevK/PCBCase
+// Generated 2026-08-06 13:43:00
 // title:	Faikout
 // company:	Adrian Kennard, Andrews & Arnold Ltd
 //
@@ -674,14 +674,18 @@ if(part)
 
 module m17(part=false,hole=false,block=false,punch=false,height)
 { // J4
+if(part)
+{
+  translate([-6.95,-5.3,0])cube([13.9,12.4,3]);
+}
 if(punch)
 {
-  translate([-6.95,-5.3,-2.75])cube([13.9,1.5,2.75]);
-  translate([-6.45,-5.3,-2.75])cube([12.9,7.9,2.75]);
-  translate([-4.65,-5.3,-2.75])cube([9.3,9.7,2.75]);
+  translate([-6.95,-5.4,-2.75])cube([13.9,1.6,2.75]);
+  translate([-6.45,-5.4,-2.75])cube([12.9,8,2.75]);
+  translate([-4.65,-5.4,-2.75])cube([9.3,9.8,2.75]);
   translate([-4.65,2.6,-2.75])cylinder(r=1.8,h=2.75);
   translate([4.65,2.6,-2.75])cylinder(r=1.8,h=2.75);
-  translate([-6.95,-5.3,0])cube([13.9,12.4,8.65]);
+  translate([-6.95,-5.4,0])cube([13.9,12.5,8.65]);
   translate([-8.35,1.6,0])cube([16.7,2.45,3.35]);
   translate([-8.35,-3.57,0])cube([16.7,1.95,3.35]);
   translate([-5.925,6.5,-0.7])cylinder(d=2,h=1);
@@ -898,7 +902,7 @@ module parts_space()
 			parts_top(part=true,hole=true,punch=true);
 			parts_bottom(part=true,hole=true,punch=true);
 		}
-		sphere(r=margin,$fn=6);
+		sphere(r=margin+0.03,$fn=6);
 	}
 }
 
@@ -1032,7 +1036,7 @@ module bottom_body()
 		intersection()
 		{
 			solid_case();
-			translate([0,0,-casebottom])pcb_hulled(casebottom+pcbthickness,0.03);
+			translate([0,0,-casebottom])pcb_hulled(casebottom+pcbthickness, 0.03);
 		}
 		if(parts_bottom||bottomthickness)minkowski()
 		{

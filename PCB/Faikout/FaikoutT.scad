@@ -1,6 +1,6 @@
 // Generated case design for Faikout/Faikout.kicad_pcb
-// By https://github.com/revk/PCBCase
-// Generated 2026-08-06 13:29:22
+// By https://codeberg.org/RevK/PCBCase
+// Generated 2026-08-06 13:43:00
 // title:	Faikout
 // company:	Adrian Kennard, Andrews & Arnold Ltd
 //
@@ -623,7 +623,7 @@ module parts_space()
 			parts_top(part=true,hole=true,punch=true);
 			parts_bottom(part=true,hole=true,punch=true);
 		}
-		sphere(r=margin,$fn=6);
+		sphere(r=margin+0.03,$fn=6);
 	}
 }
 
@@ -757,7 +757,7 @@ module bottom_body()
 		intersection()
 		{
 			solid_case();
-			translate([0,0,-casebottom])pcb_hulled(casebottom+pcbthickness,0.03);
+			translate([0,0,-casebottom])pcb_hulled(casebottom+pcbthickness, 0.03);
 		}
 		if(parts_bottom||bottomthickness)minkowski()
 		{

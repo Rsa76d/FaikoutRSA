@@ -2,7 +2,7 @@
 
 ## Trademark
 
-This project is subject to the licence in the LICENCE file, and even if that says it is an open source project, you cannot sell boards or cases bearing the Andrews & Arnold Ltd name, the A&A logo, the registered trademark AJK logo or other registered trademarks, or any GS1 allocated EANs/barcode assigned to Andrews & Arnold Ltd.
+This project is subject to the licence in the LICENCE file, and even if that says it is an open source project, you cannot sell boards or cases bearing the Andrews & Arnold Ltd name, the A&A logo, the registered trademark AJK logo, or other registered trademarks, or any GS1 allocated EANs/barcode assigned to Andrews & Arnold Ltd.
 
 ## PCB Designs
 
@@ -18,7 +18,7 @@ These files are for use with [KiCAD](https://www.kicad.org).
 |------|------|---|--------|
 |Faikout|[![FaikoutB](FaikoutB.png)](FaikoutB.stl)|[![FaikoutT](FaikoutT.png)](FaikoutT.stl)|[![FaikoutC](FaikoutC.png)](FaikoutC.stl)|
 
-## PCB Images
+## PCB Images Faikout
 
 <img src='Faikout.png' width=32%><img src='Faikout-90.png' width=32%><img src='Faikout-bottom.png' width=32%>
 <img src='Faikout-alt.png' width=32%><img src='Faikout-alt-90.png' width=32%><img src='Faikout-alt-bottom.png' width=32%>
@@ -26,4 +26,4 @@ These files are for use with [KiCAD](https://www.kicad.org).
 
 ---
 
-*Auto generated README.md 2026-08-06T13:37:40*
+*Auto generated README.md 2026-08-06T13:44:30*
