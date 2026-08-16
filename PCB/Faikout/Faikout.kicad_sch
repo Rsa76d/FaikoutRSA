@@ -8138,7 +8138,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5fd5fa15-0efd-4c7f-b504-7c16d68beed1")
