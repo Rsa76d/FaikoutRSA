@@ -1,6 +1,6 @@
 // Generated case design for FaikoutPOE/Faikout.kicad_pcb
 // By https://codeberg.org/RevK/PCBCase
-// Generated 2026-08-16 11:55:07
+// Generated 2026-08-16 13:52:07
 // title:	Faikout
 //
 
@@ -27,7 +27,7 @@ hullcap=1.000000;
 hulledge=1.000000;
 useredge=false;
 dateh=3.000000;
-date="2026-08-11";
+date="2026-08-16";
 datex=0.000000;
 datey=2.500000;
 datet=0.500000;
