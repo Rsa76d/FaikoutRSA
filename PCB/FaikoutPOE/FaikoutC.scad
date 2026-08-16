@@ -1,6 +1,6 @@
 // Generated case design for FaikoutPOE/Faikout.kicad_pcb
 // By https://codeberg.org/RevK/PCBCase
-// Generated 2026-08-06 13:43:00
+// Generated 2026-08-16 11:55:07
 // title:	Faikout
 //
 
@@ -27,7 +27,7 @@ hullcap=1.000000;
 hulledge=1.000000;
 useredge=false;
 dateh=3.000000;
-date="2026-08-03";
+date="2026-08-11";
 datex=0.000000;
 datey=2.500000;
 datet=0.500000;
@@ -193,7 +193,7 @@ translate([9.400000,16.825000,0.800000])m0(part,hole,block,punch,casetop); // C9
 module U1(){translate([11.000000,-1.000000,0.800000])children();}
 module part_U1(part=true,hole=false,block=false,punch=false)
 {
-translate([11.000000,-1.000000,0.800000])m13(part,hole,block,punch,casetop); // U1
+translate([11.000000,-1.000000,0.800000])m13(part,hole,block,punch,casetop); // RevK:QFN-32-1EP_5x5mm_P0.5mm_EP3.7x3.7mm-hot QFN-32-1EP_5x5mm_P0.5mm_EP3.7x3.7mm (back)
 };
 module C29(){translate([10.000000,11.125000,0.800000])rotate([0,0,180.000000])children();}
 module part_C29(part=true,hole=false,block=false,punch=false)
@@ -713,7 +713,7 @@ if(part)
 }
 
 module m13(part=false,hole=false,block=false,punch=false,height)
-{ // U1
+{ // RevK:QFN-32-1EP_5x5mm_P0.5mm_EP3.7x3.7mm-hot QFN-32-1EP_5x5mm_P0.5mm_EP3.7x3.7mm
 if(part)
 {
 	b(0,0,0,5,5,0.85); // Part

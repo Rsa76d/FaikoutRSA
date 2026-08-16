@@ -7186,7 +7186,7 @@
 			(in_bom yes)
 			(on_board yes)
 			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
+			(duplicate_pin_numbers_are_jumpers yes)
 			(property "Reference" "J"
 				(at 0.508 -1.27 0)
 				(show_name no)
@@ -7556,24 +7556,6 @@
 					)
 				)
 				(pin passive line
-					(at 0 13.97 270)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "S1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
 					(at 0 -13.97 90)
 					(length 2.54)
 					(name ""
@@ -7583,7 +7565,7 @@
 							)
 						)
 					)
-					(number "S2"
+					(number "S"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -9482,12 +9464,6 @@
 		(uuid "dca485a4-374b-4cc9-a870-86d0d92027a9")
 	)
 	(junction
-		(at 17.78 165.1)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "dd9ce753-bcb5-4c96-8c60-3732f8aff579")
-	)
-	(junction
 		(at 40.64 105.41)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -10657,16 +10633,6 @@
 	)
 	(wire
 		(pts
-			(xy 33.02 137.16) (xy 17.78 137.16)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8b1da060-f94b-4cd6-8481-2612ac05543d")
-	)
-	(wire
-		(pts
 			(xy 88.9 30.48) (xy 92.71 30.48)
 		)
 		(stroke
@@ -10924,16 +10890,6 @@
 			(type default)
 		)
 		(uuid "b263738c-12f7-4aa4-83ba-e55787ef5d30")
-	)
-	(wire
-		(pts
-			(xy 17.78 137.16) (xy 17.78 165.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b448fd1e-ca59-4bf5-9194-eb5091d83d56")
 	)
 	(wire
 		(pts
@@ -24483,7 +24439,7 @@
 				)
 			)
 		)
-		(property "Footprint" "RevK:QFN-32-1EP_5x5mm_P0.5mm_EP3.7x3.7mm"
+		(property "Footprint" "RevK:QFN-32-1EP_5x5mm_P0.5mm_EP3.7x3.7mm-hot"
 			(at 65.786 30.988 0)
 			(hide yes)
 			(show_name no)
@@ -25545,10 +25501,7 @@
 		(pin "4"
 			(uuid "733b2468-0771-4dab-9266-c0745d24f331")
 		)
-		(pin "S1"
-			(uuid "efd6ce40-67a0-4fb8-aae5-2816b8a2baf3")
-		)
-		(pin "S2"
+		(pin "S"
 			(uuid "3426adf2-000a-4484-961a-2975dcd088f6")
 		)
 		(instances
