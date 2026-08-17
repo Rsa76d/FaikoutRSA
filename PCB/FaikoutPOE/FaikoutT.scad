@@ -1,6 +1,6 @@
 // Generated case design for FaikoutPOE/Faikout.kicad_pcb
 // By https://codeberg.org/RevK/PCBCase
-// Generated 2026-08-16 14:05:47
+// Generated 2026-08-17 09:58:22
 // title:	Faikout
 //
 
@@ -27,7 +27,7 @@ hullcap=1.000000;
 hulledge=1.000000;
 useredge=false;
 dateh=3.000000;
-date="2026-08-16";
+date="2026-08-17";
 datex=0.000000;
 datey=2.500000;
 datet=0.500000;
@@ -193,7 +193,7 @@ translate([9.400000,16.825000,0.800000])m0(part,hole,block,punch,casetop); // C9
 module U1(){translate([11.000000,-1.000000,0.800000])children();}
 module part_U1(part=true,hole=false,block=false,punch=false)
 {
-translate([11.000000,-1.000000,0.800000])m13(part,hole,block,punch,casetop); // RevK:QFN-32-1EP_5x5mm_P0.5mm_EP3.7x3.7mm-hot QFN-32-1EP_5x5mm_P0.5mm_EP3.7x3.7mm (back)
+translate([11.000000,-1.000000,0.800000])m13(part,hole,block,punch,casetop); // U1
 };
 module C29(){translate([10.000000,11.125000,0.800000])rotate([0,0,180.000000])children();}
 module part_C29(part=true,hole=false,block=false,punch=false)
@@ -556,8 +556,16 @@ part_C2(part,hole,block,punch);
 }
 
 parts_top=81;
+module P7(){translate([-9.600000,-2.300000,0.000000])rotate([0,0,180.000000])rotate([180,0,0])children();}
+module part_P7(part=true,hole=false,block=false,punch=false)
+{
+};
 module P3(){translate([6.000000,6.500000,0.000000])rotate([0,0,-90.000000])rotate([180,0,0])children();}
 module part_P3(part=true,hole=false,block=false,punch=false)
+{
+};
+module P5(){translate([-6.500000,-4.500000,0.000000])rotate([0,0,180.000000])rotate([180,0,0])children();}
+module part_P5(part=true,hole=false,block=false,punch=false)
 {
 };
 module J5(){translate([-6.500000,2.500000,0.000000])rotate([0,0,90.000000])rotate([180,0,0])children();}
@@ -568,12 +576,20 @@ module P2(){translate([3.500000,6.500000,0.000000])rotate([0,0,-90.000000])rotat
 module part_P2(part=true,hole=false,block=false,punch=false)
 {
 };
-module P1(){translate([-6.500000,-3.000000,0.000000])rotate([0,0,90.000000])rotate([180,0,0])children();}
+module P1(){translate([-6.500000,-2.300000,0.000000])rotate([0,0,90.000000])rotate([180,0,0])children();}
 module part_P1(part=true,hole=false,block=false,punch=false)
 {
 };
 module J7(){translate([13.500000,6.500000,0.000000])rotate([0,0,180.000000])rotate([180,0,0])children();}
 module part_J7(part=true,hole=false,block=false,punch=false)
+{
+};
+module P8(){translate([-9.700000,-6.600000,0.000000])rotate([0,0,180.000000])rotate([180,0,0])children();}
+module part_P8(part=true,hole=false,block=false,punch=false)
+{
+};
+module P6(){translate([-6.500000,-6.700000,0.000000])rotate([0,0,180.000000])rotate([180,0,0])children();}
+module part_P6(part=true,hole=false,block=false,punch=false)
 {
 };
 module P4(){translate([8.500000,6.500000,0.000000])rotate([0,0,-90.000000])rotate([180,0,0])children();}
@@ -582,11 +598,15 @@ module part_P4(part=true,hole=false,block=false,punch=false)
 };
 // Parts to go on PCB (bottom)
 module parts_bottom(part=false,hole=false,block=false,punch=false){
+part_P7(part,hole,block,punch);
 part_P3(part,hole,block,punch);
+part_P5(part,hole,block,punch);
 part_J5(part,hole,block,punch);
 part_P2(part,hole,block,punch);
 part_P1(part,hole,block,punch);
 part_J7(part,hole,block,punch);
+part_P8(part,hole,block,punch);
+part_P6(part,hole,block,punch);
 part_P4(part,hole,block,punch);
 }
 
@@ -713,10 +733,14 @@ if(part)
 }
 
 module m13(part=false,hole=false,block=false,punch=false,height)
-{ // RevK:QFN-32-1EP_5x5mm_P0.5mm_EP3.7x3.7mm-hot QFN-32-1EP_5x5mm_P0.5mm_EP3.7x3.7mm
+{ // U1
 if(part)
 {
 	b(0,0,0,5,5,0.85); // Part
+}
+if(hole)
+{ // holes for heat
+        for(x=[-2,2])for(y=[-2,2])translate([x-1,y-1,5])cube([2,2,height]);
 }
 }
 

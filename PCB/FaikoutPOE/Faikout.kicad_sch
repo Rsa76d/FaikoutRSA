@@ -9552,10 +9552,6 @@
 		(uuid "093f0171-7023-4cf5-8812-6d3c469574f2")
 	)
 	(no_connect
-		(at 233.68 25.4)
-		(uuid "13bb8ae9-a66c-4176-a0c6-2a29cdafdbd6")
-	)
-	(no_connect
 		(at 233.68 66.04)
 		(uuid "2121d14b-7cd9-4c6a-aedb-b9b0d24cde2a")
 	)
@@ -9586,10 +9582,6 @@
 	(no_connect
 		(at 264.16 60.96)
 		(uuid "4c42747a-b64c-4dcf-8811-de31fd7b3662")
-	)
-	(no_connect
-		(at 233.68 27.94)
-		(uuid "4d2d1666-3a34-4eba-96e5-370d03395204")
 	)
 	(no_connect
 		(at 233.68 33.02)
@@ -14791,6 +14783,83 @@
 		)
 	)
 	(symbol
+		(lib_id "RevK:Square")
+		(at 227.33 16.51 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "203d9395-70e1-4d78-aff6-2cb4b6b8f003")
+		(property "Reference" "P7"
+			(at 220.98 16.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Square"
+			(at 220.726 16.51 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "RevK:PAD-2mm"
+			(at 227.33 13.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 227.33 16.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 227.33 16.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "77099e16-723a-43f9-ae58-410dd5ced780")
+		)
+		(instances
+			(project "Faikout"
+				(path "/825c70b0-4860-42b7-97dc-86bfa46e06fd"
+					(reference "P7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 255.27 132.08 270)
 		(unit 1)
@@ -16159,6 +16228,83 @@
 	)
 	(symbol
 		(lib_id "RevK:Square")
+		(at 233.68 27.94 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "3f224b9c-f2c9-4dbe-913d-acc2dd1bd4bd")
+		(property "Reference" "P6"
+			(at 227.33 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Square"
+			(at 227.076 27.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "RevK:PAD-2mm"
+			(at 233.68 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 233.68 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 233.68 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "62af8ae3-0a79-40a1-bf28-f78030f9f183")
+		)
+		(instances
+			(project "Faikout"
+				(path "/825c70b0-4860-42b7-97dc-86bfa46e06fd"
+					(reference "P6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RevK:Square")
 		(at 173.99 68.58 180)
 		(unit 1)
 		(body_style 1)
@@ -16398,6 +16544,85 @@
 			(project "Faikout"
 				(path "/825c70b0-4860-42b7-97dc-86bfa46e06fd"
 					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 227.33 19.05 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4262837c-3d65-4b33-a758-21efd5426e15")
+		(property "Reference" "#PWR062"
+			(at 233.68 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 231.14 19.0499 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 227.33 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 227.33 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 227.33 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "bb9026b8-c0cb-4f58-b3a9-dab080bb638c")
+		)
+		(instances
+			(project "Faikout"
+				(path "/825c70b0-4860-42b7-97dc-86bfa46e06fd"
+					(reference "#PWR062")
 					(unit 1)
 				)
 			)
@@ -17195,6 +17420,83 @@
 			(project "Faikout"
 				(path "/825c70b0-4860-42b7-97dc-86bfa46e06fd"
 					(reference "C6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RevK:Square")
+		(at 227.33 19.05 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "4b47e45a-829f-4f00-9d33-4294a7db0778")
+		(property "Reference" "P8"
+			(at 220.98 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Square"
+			(at 220.726 19.05 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "RevK:PAD-2mm"
+			(at 227.33 16.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 227.33 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 227.33 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "30a1987d-47d4-4651-9743-77f906e55512")
+		)
+		(instances
+			(project "Faikout"
+				(path "/825c70b0-4860-42b7-97dc-86bfa46e06fd"
+					(reference "P8")
 					(unit 1)
 				)
 			)
@@ -20670,7 +20972,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 222.25 26.67 0)
+		(at 222.25 35.56 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -20681,7 +20983,7 @@
 		(fields_autoplaced yes)
 		(uuid "94ddd8ee-e2fa-4606-8553-526cd7506ec3")
 		(property "Reference" "#PWR055"
-			(at 222.25 30.48 0)
+			(at 222.25 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20692,7 +20994,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 222.25 23.0942 0)
+			(at 222.25 31.9842 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -20702,7 +21004,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 222.25 26.67 0)
+			(at 222.25 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20713,7 +21015,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 222.25 26.67 0)
+			(at 222.25 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20724,7 +21026,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 222.25 26.67 0)
+			(at 222.25 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22053,7 +22355,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 222.25 30.48 180)
+		(at 222.25 39.37 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -22063,7 +22365,7 @@
 		(dnp no)
 		(uuid "ac34de2c-b05f-46fc-a75b-12bd2c441912")
 		(property "Reference" "C17"
-			(at 224.282 28.067 0)
+			(at 224.282 36.957 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -22073,7 +22375,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 216.281 30.734 0)
+			(at 216.281 39.624 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -22083,7 +22385,7 @@
 			)
 		)
 		(property "Footprint" "RevK:C_0201"
-			(at 221.2848 26.67 0)
+			(at 221.2848 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22094,7 +22396,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 222.25 30.48 0)
+			(at 222.25 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22105,7 +22407,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 222.25 30.48 0)
+			(at 222.25 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22116,7 +22418,7 @@
 			)
 		)
 		(property "MPN" "C76934"
-			(at 222.25 30.48 90)
+			(at 222.25 39.37 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23064,7 +23366,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 222.25 34.29 0)
+		(at 222.25 43.18 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -23075,7 +23377,7 @@
 		(fields_autoplaced yes)
 		(uuid "b8c93b00-6cbd-48b2-bbbe-202bc3fcb026")
 		(property "Reference" "#PWR056"
-			(at 222.25 40.64 0)
+			(at 222.25 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23086,7 +23388,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 222.25 38.7334 0)
+			(at 222.25 47.6234 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -23096,7 +23398,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 222.25 34.29 0)
+			(at 222.25 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23107,7 +23409,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 222.25 34.29 0)
+			(at 222.25 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23118,7 +23420,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 222.25 34.29 0)
+			(at 222.25 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24325,6 +24627,83 @@
 			(project "Faikout"
 				(path "/825c70b0-4860-42b7-97dc-86bfa46e06fd"
 					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RevK:Square")
+		(at 233.68 25.4 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "cd69a645-6229-4bae-850f-ebd7afc3dc1b")
+		(property "Reference" "P5"
+			(at 227.33 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Square"
+			(at 227.076 25.4 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "RevK:PAD-2mm"
+			(at 233.68 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 233.68 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 233.68 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "608ed4d8-af52-4d4e-beb4-bc22e6126dfc")
+		)
+		(instances
+			(project "Faikout"
+				(path "/825c70b0-4860-42b7-97dc-86bfa46e06fd"
+					(reference "P5")
 					(unit 1)
 				)
 			)
@@ -26409,6 +26788,85 @@
 			(project "Faikout"
 				(path "/825c70b0-4860-42b7-97dc-86bfa46e06fd"
 					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 227.33 16.51 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "eafb5d07-1a3f-4929-9faa-e612b65c6bd7")
+		(property "Reference" "#PWR057"
+			(at 223.52 16.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 231.14 16.5099 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 227.33 16.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 227.33 16.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 227.33 16.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1b27e9eb-42f0-48a1-8ac5-9f129a5d296a")
+		)
+		(instances
+			(project "Faikout"
+				(path "/825c70b0-4860-42b7-97dc-86bfa46e06fd"
+					(reference "#PWR057")
 					(unit 1)
 				)
 			)

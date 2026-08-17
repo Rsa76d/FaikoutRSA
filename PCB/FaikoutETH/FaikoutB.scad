@@ -1,6 +1,6 @@
 // Generated case design for FaikoutETH/Faikout.kicad_pcb
 // By https://codeberg.org/RevK/PCBCase
-// Generated 2026-08-16 14:05:47
+// Generated 2026-08-17 09:58:22
 // title:	Faikout
 // company:	Adrian Kennard, Andrews & Arnold Ltd
 //
@@ -28,7 +28,7 @@ hullcap=1.000000;
 hulledge=1.000000;
 useredge=false;
 dateh=3.000000;
-date="2026-08-16";
+date="2026-08-17";
 datex=0.000000;
 datey=2.500000;
 datet=0.500000;
@@ -216,7 +216,7 @@ translate([-9.656250,-5.200000,1.200000])rotate([0,0,-90.000000])m0(part,hole,bl
 module U1(){translate([-12.456250,-8.050000,1.200000])rotate([0,0,90.000000])children();}
 module part_U1(part=true,hole=false,block=false,punch=false)
 {
-translate([-12.456250,-8.050000,1.200000])rotate([0,0,90.000000])m10(part,hole,block,punch,casetop); // RevK:QFN-32-1EP_5x5mm_P0.5mm_EP3.7x3.7mm-hot QFN-32-1EP_5x5mm_P0.5mm_EP3.7x3.7mm (back)
+translate([-12.456250,-8.050000,1.200000])rotate([0,0,90.000000])m10(part,hole,block,punch,casetop); // U1
 };
 module FID2(){translate([-9.750000,20.000000,1.200000])children();}
 module part_FID2(part=true,hole=false,block=false,punch=false)
@@ -609,10 +609,14 @@ if(part)
 }
 
 module m10(part=false,hole=false,block=false,punch=false,height)
-{ // RevK:QFN-32-1EP_5x5mm_P0.5mm_EP3.7x3.7mm-hot QFN-32-1EP_5x5mm_P0.5mm_EP3.7x3.7mm
+{ // U1
 if(part)
 {
 	b(0,0,0,5,5,0.85); // Part
+}
+if(hole)
+{ // holes for heat
+        for(x=[-2,2])for(y=[-2,2])translate([x-1,y-1,5])cube([2,2,height]);
 }
 }
 
