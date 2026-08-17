@@ -40,8 +40,8 @@
         "other_text_upright": false,
         "pads": {
           "drill": 0.0,
-          "height": 1.0,
-          "width": 1.0
+          "height": 2.0,
+          "width": 2.0
         },
         "silk_line_width": 0.12,
         "silk_text_italic": false,
@@ -66,7 +66,7 @@
           "min_thickness": 0.2,
           "pad_connection": 2,
           "remove_islands": 0,
-          "thermal_relief_gap": 0.5,
+          "thermal_relief_gap": 0.2,
           "thermal_relief_spoke_width": 0.5
         }
       },
@@ -746,7 +746,7 @@
         "uuid": "46c350bb-7de4-4e81-aafd-4af55e37aab0"
       }
     ],
-    "used_designators": "U1,V7",
+    "used_designators": "TP11-13,#PWR55,U1,V7",
     "variants": []
   },
   "sheets": [

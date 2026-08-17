@@ -1,6 +1,6 @@
 // Generated case design for FaikoutETH/Faikout.kicad_pcb
 // By https://codeberg.org/RevK/PCBCase
-// Generated 2026-08-06 13:43:00
+// Generated 2026-08-17 09:58:22
 // title:	Faikout
 // company:	Adrian Kennard, Andrews & Arnold Ltd
 //
@@ -28,7 +28,7 @@ hullcap=1.000000;
 hulledge=1.000000;
 useredge=false;
 dateh=3.000000;
-date="2026-07-22";
+date="2026-08-17";
 datex=0.000000;
 datey=2.500000;
 datet=0.500000;
@@ -424,7 +424,11 @@ module TP10(){translate([-4.125000,14.700000,0.000000])rotate([180,0,0])children
 module part_TP10(part=true,hole=false,block=false,punch=false)
 {
 };
-module TP8(){translate([-8.625000,14.750000,0.000000])rotate([180,0,0])children();}
+module TP13(){translate([-14.000000,7.800000,0.000000])rotate([0,0,180.000000])rotate([180,0,0])children();}
+module part_TP13(part=true,hole=false,block=false,punch=false)
+{
+};
+module TP8(){translate([-13.125000,14.750000,0.000000])rotate([180,0,0])children();}
 module part_TP8(part=true,hole=false,block=false,punch=false)
 {
 };
@@ -440,7 +444,7 @@ module TP4(){translate([-10.875000,5.250000,0.000000])rotate([180,0,0])children(
 module part_TP4(part=true,hole=false,block=false,punch=false)
 {
 };
-module TP6(){translate([-13.125000,14.750000,0.000000])rotate([180,0,0])children();}
+module TP6(){translate([-8.625000,14.750000,0.000000])rotate([180,0,0])children();}
 module part_TP6(part=true,hole=false,block=false,punch=false)
 {
 };
@@ -448,8 +452,16 @@ module TP7(){translate([-4.125000,5.250000,0.000000])rotate([180,0,0])children()
 module part_TP7(part=true,hole=false,block=false,punch=false)
 {
 };
+module TP12(){translate([-14.000000,12.200000,0.000000])rotate([0,0,180.000000])rotate([180,0,0])children();}
+module part_TP12(part=true,hole=false,block=false,punch=false)
+{
+};
 module TP5(){translate([-10.875000,14.750000,0.000000])rotate([180,0,0])children();}
 module part_TP5(part=true,hole=false,block=false,punch=false)
+{
+};
+module TP11(){translate([-14.000000,10.000000,0.000000])rotate([0,0,180.000000])rotate([180,0,0])children();}
+module part_TP11(part=true,hole=false,block=false,punch=false)
 {
 };
 module V6(){translate([17.500000,0.000000,0.000000])rotate([0,0,90.000000])rotate([180,0,0])children();}
@@ -460,20 +472,23 @@ module TP9(){translate([-6.375000,14.700000,0.000000])rotate([180,0,0])children(
 module part_TP9(part=true,hole=false,block=false,punch=false)
 {
 };
-module J3(){translate([-9.750000,10.000000,0.000000])rotate([0,0,-90.000000])rotate([180,0,0])children();}
+module J3(){translate([-7.700000,10.000000,0.000000])rotate([0,0,-90.000000])rotate([180,0,0])children();}
 module part_J3(part=true,hole=false,block=false,punch=false)
 {
 };
 // Parts to go on PCB (bottom)
 module parts_bottom(part=false,hole=false,block=false,punch=false){
 part_TP10(part,hole,block,punch);
+part_TP13(part,hole,block,punch);
 part_TP8(part,hole,block,punch);
 part_TP2(part,hole,block,punch);
 part_TP3(part,hole,block,punch);
 part_TP4(part,hole,block,punch);
 part_TP6(part,hole,block,punch);
 part_TP7(part,hole,block,punch);
+part_TP12(part,hole,block,punch);
 part_TP5(part,hole,block,punch);
+part_TP11(part,hole,block,punch);
 part_V6(part,hole,block,punch);
 part_TP9(part,hole,block,punch);
 part_J3(part,hole,block,punch);
@@ -598,6 +613,10 @@ module m10(part=false,hole=false,block=false,punch=false,height)
 if(part)
 {
 	b(0,0,0,5,5,0.85); // Part
+}
+if(hole)
+{ // holes for heat
+        for(x=[-2,2])for(y=[-2,2])translate([x-1,y-1,5])cube([2,2,height]);
 }
 }
 
