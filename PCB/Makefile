@@ -12,13 +12,13 @@ stl: 	Faikout/Faikout[TCB].stl
 png:	$(patsubst %.kicad_pcb,%.png,$(wildcard */*.kicad_pcb))
 
 Faikout/FaikoutT.scad: Faikout/Faikout.kicad_pcb PCBCase/case
-	PCBCase/case -o $@ $< --edge=2 --top=7 --bottom=3 --pcb=2 --split-file --lip-type=1 --logo-angle=-90 --logo-x=-5 --name="" --date-y=3 --url-y=-3
+	PCBCase/case -o $@ $< --edge=2 --top=7 --bottom=3 --pcb=2 --split-file --lip-type=1 -A90 -X-8 -FAJK -H10 -TA
 
 FaikoutETH/FaikoutT.scad: FaikoutETH/Faikout.kicad_pcb PCBCase/case
-	PCBCase/case -o $@ $< --edge=2 --top=7 --bottom=3 --pcb=2 --split-file --logo-x=11 --logo-y=-8 --logo-height=8 --bump=6 --top-bump=4 --logo-angle=90 --name-angle=90 --name-x=-10 --name-y=0
+	PCBCase/case -o $@ $< --edge=2 --top=7 --bottom=3 --pcb=2 --split-file --bump=6 --top-bump=4 -X11 -Y-8 -A90 -FAJK -H9 -TA -X-4 -A90 -TFaikout
 
 FaikoutPOE/FaikoutT.scad: FaikoutPOE/Faikout.kicad_pcb PCBCase/case
-	PCBCase/case -o $@ $< --edge=2 --top=12 --bottom=3 --pcb=2 --split-file
+	PCBCase/case -o $@ $< --edge=2 --top=12 --bottom=3 --pcb=2 --split-file -FAJK -H10 -TA -Y-25 -TFaikout
 
 PCBCase/clean: PCBCase/clean.c
 	make -C PCBCase
