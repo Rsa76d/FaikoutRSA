@@ -1,6 +1,6 @@
 // Generated case design for FaikoutPOE/Faikout.kicad_pcb
 // By https://codeberg.org/RevK/PCBCase
-// Generated 2026-08-24 10:07:04
+// Generated 2026-08-27 10:47:38
 // title:	Faikout
 //
 
@@ -87,10 +87,10 @@ module part_C5(part=true,hole=false,block=false,punch=false)
 {
 translate([8.950000,4.850000,0.800000])rotate([0,0,180.000000])m4(part,hole,block,punch,casetop); // C5
 };
-module D8(){translate([-7.300000,-27.500000,0.800000])rotate([0,0,90.000000])children();}
+module D8(){translate([-7.300000,-27.500000,0.800000])rotate([0,0,-90.000000])children();}
 module part_D8(part=true,hole=false,block=false,punch=false)
 {
-translate([-7.300000,-27.500000,0.800000])rotate([0,0,90.000000])m5(part,hole,block,punch,casetop); // RevK:TO-269AA-BR TO-269AA (back)
+translate([-7.300000,-27.500000,0.800000])rotate([0,0,-90.000000])m5(part,hole,block,punch,casetop); // RevK:TO-269AA-BR TO-269AA (back)
 };
 module D7(){translate([8.000000,24.400000,0.800000])rotate([0,0,-90.000000])children();}
 module part_D7(part=true,hole=false,block=false,punch=false)
@@ -312,10 +312,10 @@ module part_R8(part=true,hole=false,block=false,punch=false)
 {
 translate([14.725000,-2.750000,0.800000])rotate([0,0,180.000000])m3(part,hole,block,punch,casetop); // R5
 };
-module D9(){translate([-13.300000,-27.500000,0.800000])rotate([0,0,90.000000])children();}
+module D9(){translate([-13.300000,-27.500000,0.800000])rotate([0,0,-90.000000])children();}
 module part_D9(part=true,hole=false,block=false,punch=false)
 {
-translate([-13.300000,-27.500000,0.800000])rotate([0,0,90.000000])m5(part,hole,block,punch,casetop); // RevK:TO-269AA-BR TO-269AA (back)
+translate([-13.300000,-27.500000,0.800000])rotate([0,0,-90.000000])m5(part,hole,block,punch,casetop); // RevK:TO-269AA-BR TO-269AA (back)
 };
 module D2(){translate([12.600000,4.150000,0.800000])rotate([0,0,90.000000])children();}
 module part_D2(part=true,hole=false,block=false,punch=false)
@@ -874,7 +874,6 @@ translate([-15.4/2,-15.45/2,0])
 	{
 		cube([15.4,20.5,0.8]);
 		translate([0.7,0.5,0])cube([14,13.55,2.4]);
-		cube([15.4,20.5,0.8]);
 	}
 }
 }
@@ -900,7 +899,7 @@ if(part)
 module bottom_text(offset=0)
 {
 minkowski(){translate([0.00,-2.50,-casebottom-offset-1])rotate(0.00)scale([-1,1])linear_extrude(1)text("shop.revk.uk",size=3.00,halign="center",valign="center",font="OCRB");cylinder(d1=0.38,d2=0,h=0.38,$fn=6);}
-minkowski(){translate([0.00,2.50,-casebottom-offset-1])rotate(0.00)scale([-1,1])linear_extrude(1)text("2026-08-17",size=3.00,halign="center",valign="center",font="OCRB");cylinder(d1=0.38,d2=0,h=0.38,$fn=6);}
+minkowski(){translate([0.00,2.50,-casebottom-offset-1])rotate(0.00)scale([-1,1])linear_extrude(1)text("2026-08-27",size=3.00,halign="center",valign="center",font="OCRB");cylinder(d1=0.38,d2=0,h=0.38,$fn=6);}
 }
 
 module top_text(offset=0)
