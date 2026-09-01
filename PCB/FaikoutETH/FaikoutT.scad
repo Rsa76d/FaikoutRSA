@@ -1,6 +1,6 @@
 // Generated case design for FaikoutETH/Faikout.kicad_pcb
 // By https://codeberg.org/RevK/PCBCase
-// Generated 2026-08-17 09:58:22
+// Generated 2026-08-24 10:07:04
 // title:	Faikout
 // company:	Adrian Kennard, Andrews & Arnold Ltd
 //
@@ -27,34 +27,6 @@ nohull=false;
 hullcap=1.000000;
 hulledge=1.000000;
 useredge=false;
-dateh=3.000000;
-date="2026-08-17";
-datex=0.000000;
-datey=2.500000;
-datet=0.500000;
-datea=0;
-datef="OCRB";
-urlh=3.000000;
-url="shop.revk.uk";
-urlx=0.000000;
-urly=-2.500000;
-urlt=0.500000;
-urla=0;
-urlf="OCRB";
-logoh=8.000000;
-logo="A";
-logox=11.000000;
-logoy=-8.000000;
-logot=0.500000;
-logoa=90;
-logof="AJK";
-nameh=5.000000;
-name="Faikout";
-namex=-10.000000;
-namey=0.000000;
-namet=0.500000;
-namea=90;
-namef="OCRB";
 spacing=51.000000;
 pcbwidth=35.000000;
 function pcbwidth()=35.000000;
@@ -616,7 +588,7 @@ if(part)
 }
 if(hole)
 { // holes for heat
-        for(x=[-2,2])for(y=[-2,2])translate([x-1,y-1,5])cube([2,2,height]);
+        for(x=[-2,2])for(y=[-2,2])translate([x-1,y-1,0.5])cube([2,2,height]);
 }
 }
 
@@ -731,6 +703,18 @@ if(punch)
 if(hole)b(0,-15,0,12,20,1);
 }
 
+
+module bottom_text(offset=0)
+{
+minkowski(){translate([0.00,-2.50,-casebottom-offset-1])rotate(0.00)scale([-1,1])linear_extrude(1)text("shop.revk.uk",size=3.00,halign="center",valign="center",font="OCRB");cylinder(d1=0.38,d2=0,h=0.38,$fn=6);}
+minkowski(){translate([0.00,2.50,-casebottom-offset-1])rotate(0.00)scale([-1,1])linear_extrude(1)text("2026-08-24",size=3.00,halign="center",valign="center",font="OCRB");cylinder(d1=0.38,d2=0,h=0.38,$fn=6);}
+}
+
+module top_text(offset=0)
+{
+minkowski(){translate([-4.00,0.00,pcbthickness+casetop+offset-0.50])rotate(90.00)linear_extrude(1)text("Faikout",size=5.00,halign="center",valign="center",font="OCRB");cylinder(d1=0,d2=0.50,h=0.50,$fn=6);}
+minkowski(){translate([11.00,-8.00,pcbthickness+casetop+offset-0.50])rotate(90.00)linear_extrude(1)text("A",size=9.00,halign="center",valign="center",font="AJK");cylinder(d1=0,d2=0.50,h=0.50,$fn=6);}
+}
 // Generate PCB casework
 
 height=casebottom+pcbthickness+casetop;
@@ -1113,35 +1097,6 @@ module bottom()
 			casebottomscad();
 			bottom_text();
 		}
-	}
-}
-
-
-module bottom_text(offset=0)
-{
-	if(dateh)minkowski()
-	{
-		translate([datex,datey,-casebottom-offset-1])rotate(datea)scale([-1,1])linear_extrude(1)text(date,size=dateh,halign="center",valign="center",font=datef);
-		cylinder(d1=datet,d2=0,h=datet,$fn=6);
-	}
-	if(urlh)minkowski()
-	{
-		translate([urlx,urly,-casebottom-offset-1])rotate(urla)scale([-1,1])linear_extrude(1)text(url,size=urlh,halign="center",valign="center",font=urlf);
-		cylinder(d1=urlt,d2=0,h=urlt,$fn=6);
-	}
-}
-
-module top_text(offset=0)
-{
-	if(logoh)minkowski()
-	{
-		translate([logox,logoy,pcbthickness+casetop+offset-datet])rotate(logoa)linear_extrude(1)text(logo,size=logoh,halign="center",valign="center",font=logof);
-		cylinder(d1=0,d2=logot,h=logot,$fn=6);
-	}
-	if(nameh)minkowski()
-	{
-		translate([namex,namey,pcbthickness+casetop+offset-datet])rotate(namea)linear_extrude(1)text(name,size=nameh,halign="center",valign="center",font=namef);
-		cylinder(d1=0,d2=namet,h=namet,$fn=6);
 	}
 }
 top();

@@ -1,6 +1,6 @@
 // Generated case design for FaikoutPOE/Faikout.kicad_pcb
 // By https://codeberg.org/RevK/PCBCase
-// Generated 2026-08-17 09:58:22
+// Generated 2026-08-27 10:47:38
 // title:	Faikout
 //
 
@@ -26,34 +26,6 @@ nohull=false;
 hullcap=1.000000;
 hulledge=1.000000;
 useredge=false;
-dateh=3.000000;
-date="2026-08-17";
-datex=0.000000;
-datey=2.500000;
-datet=0.500000;
-datea=0;
-datef="OCRB";
-urlh=3.000000;
-url="shop.revk.uk";
-urlx=0.000000;
-urly=-2.500000;
-urlt=0.500000;
-urla=0;
-urlf="OCRB";
-logoh=10.000000;
-logo="A";
-logox=0.000000;
-logoy=0.000000;
-logot=0.500000;
-logoa=0;
-logof="AJK";
-nameh=5.000000;
-name="Faikout";
-namex=0.000000;
-namey=-10.000000;
-namet=0.500000;
-namea=0;
-namef="OCRB";
 spacing=55.000000;
 pcbwidth=39.000000;
 function pcbwidth()=39.000000;
@@ -115,10 +87,10 @@ module part_C5(part=true,hole=false,block=false,punch=false)
 {
 translate([8.950000,4.850000,0.800000])rotate([0,0,180.000000])m4(part,hole,block,punch,casetop); // C5
 };
-module D8(){translate([-7.300000,-27.500000,0.800000])rotate([0,0,90.000000])children();}
+module D8(){translate([-7.300000,-27.500000,0.800000])rotate([0,0,-90.000000])children();}
 module part_D8(part=true,hole=false,block=false,punch=false)
 {
-translate([-7.300000,-27.500000,0.800000])rotate([0,0,90.000000])m5(part,hole,block,punch,casetop); // RevK:TO-269AA-BR TO-269AA (back)
+translate([-7.300000,-27.500000,0.800000])rotate([0,0,-90.000000])m5(part,hole,block,punch,casetop); // RevK:TO-269AA-BR TO-269AA (back)
 };
 module D7(){translate([8.000000,24.400000,0.800000])rotate([0,0,-90.000000])children();}
 module part_D7(part=true,hole=false,block=false,punch=false)
@@ -340,10 +312,10 @@ module part_R8(part=true,hole=false,block=false,punch=false)
 {
 translate([14.725000,-2.750000,0.800000])rotate([0,0,180.000000])m3(part,hole,block,punch,casetop); // R5
 };
-module D9(){translate([-13.300000,-27.500000,0.800000])rotate([0,0,90.000000])children();}
+module D9(){translate([-13.300000,-27.500000,0.800000])rotate([0,0,-90.000000])children();}
 module part_D9(part=true,hole=false,block=false,punch=false)
 {
-translate([-13.300000,-27.500000,0.800000])rotate([0,0,90.000000])m5(part,hole,block,punch,casetop); // RevK:TO-269AA-BR TO-269AA (back)
+translate([-13.300000,-27.500000,0.800000])rotate([0,0,-90.000000])m5(part,hole,block,punch,casetop); // RevK:TO-269AA-BR TO-269AA (back)
 };
 module D2(){translate([12.600000,4.150000,0.800000])rotate([0,0,90.000000])children();}
 module part_D2(part=true,hole=false,block=false,punch=false)
@@ -740,7 +712,7 @@ if(part)
 }
 if(hole)
 { // holes for heat
-        for(x=[-2,2])for(y=[-2,2])translate([x-1,y-1,5])cube([2,2,height]);
+        for(x=[-2,2])for(y=[-2,2])translate([x-1,y-1,0.5])cube([2,2,height]);
 }
 }
 
@@ -902,7 +874,6 @@ translate([-15.4/2,-15.45/2,0])
 	{
 		cube([15.4,20.5,0.8]);
 		translate([0.7,0.5,0])cube([14,13.55,2.4]);
-		cube([15.4,20.5,0.8]);
 	}
 }
 }
@@ -924,6 +895,18 @@ if(part)
 }
 }
 
+
+module bottom_text(offset=0)
+{
+minkowski(){translate([0.00,-2.50,-casebottom-offset-1])rotate(0.00)scale([-1,1])linear_extrude(1)text("shop.revk.uk",size=3.00,halign="center",valign="center",font="OCRB");cylinder(d1=0.38,d2=0,h=0.38,$fn=6);}
+minkowski(){translate([0.00,2.50,-casebottom-offset-1])rotate(0.00)scale([-1,1])linear_extrude(1)text("2026-08-27",size=3.00,halign="center",valign="center",font="OCRB");cylinder(d1=0.38,d2=0,h=0.38,$fn=6);}
+}
+
+module top_text(offset=0)
+{
+minkowski(){translate([0.00,-25.00,pcbthickness+casetop+offset-0.50])rotate(0.00)linear_extrude(1)text("Faikout",size=5.00,halign="center",valign="center",font="OCRB");cylinder(d1=0,d2=0.50,h=0.50,$fn=6);}
+minkowski(){translate([0.00,0.00,pcbthickness+casetop+offset-0.50])rotate(0.00)linear_extrude(1)text("A",size=10.00,halign="center",valign="center",font="AJK");cylinder(d1=0,d2=0.50,h=0.50,$fn=6);}
+}
 // Generate PCB casework
 
 height=casebottom+pcbthickness+casetop;
@@ -1308,33 +1291,4 @@ module bottom()
 		}
 	}
 }
-
-
-module bottom_text(offset=0)
-{
-	if(dateh)minkowski()
-	{
-		translate([datex,datey,-casebottom-offset-1])rotate(datea)scale([-1,1])linear_extrude(1)text(date,size=dateh,halign="center",valign="center",font=datef);
-		cylinder(d1=datet,d2=0,h=datet,$fn=6);
-	}
-	if(urlh)minkowski()
-	{
-		translate([urlx,urly,-casebottom-offset-1])rotate(urla)scale([-1,1])linear_extrude(1)text(url,size=urlh,halign="center",valign="center",font=urlf);
-		cylinder(d1=urlt,d2=0,h=urlt,$fn=6);
-	}
-}
-
-module top_text(offset=0)
-{
-	if(logoh)minkowski()
-	{
-		translate([logox,logoy,pcbthickness+casetop+offset-datet])rotate(logoa)linear_extrude(1)text(logo,size=logoh,halign="center",valign="center",font=logof);
-		cylinder(d1=0,d2=logot,h=logot,$fn=6);
-	}
-	if(nameh)minkowski()
-	{
-		translate([namex,namey,pcbthickness+casetop+offset-datet])rotate(namea)linear_extrude(1)text(name,size=nameh,halign="center",valign="center",font=namef);
-		cylinder(d1=0,d2=namet,h=namet,$fn=6);
-	}
-}
-translate([0,0,casebottom+casetop+casetopbump+pcbthickness+0.1])rotate([180,0,0])top();bottom();
+translate([0.00,0.00,0]){translate([0,0,casebottom+casetop+casetopbump+pcbthickness+0.1])rotate([180,0,0])top();bottom();}
