@@ -22270,7 +22270,7 @@
 				)
 			)
 		)
-		(property "Position Offset" "0,0.5"
+		(property "Position Offset" "0,0.4"
 			(at 210.82 34.29 0)
 			(hide yes)
 			(show_name no)

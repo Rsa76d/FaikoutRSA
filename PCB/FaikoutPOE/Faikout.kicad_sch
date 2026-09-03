@@ -13349,7 +13349,7 @@
 				)
 			)
 		)
-		(property "MPN" "C158612"
+		(property "MPN" "C473585"
 			(at 199.39 31.75 0)
 			(hide yes)
 			(show_name no)
@@ -25845,7 +25845,7 @@
 				)
 			)
 		)
-		(property "Position Offset" "0,0.5"
+		(property "Position Offset" "0,0.4"
 			(at 33.02 151.13 0)
 			(hide yes)
 			(show_name no)
