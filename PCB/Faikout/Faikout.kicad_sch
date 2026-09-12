@@ -7448,8 +7448,19 @@
 				)
 			)
 		)
-		(property "MPN" "C193381"
+		(property "MPN" "C5224289"
 			(at 166.37 70.866 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rotation Offset" "90"
+			(at 156.845 76.835 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7652,7 +7663,7 @@
 		(dnp no)
 		(uuid "48f46e32-1577-4269-8c53-e70c65943b02")
 		(property "Reference" "R16"
-			(at 114.3 171.704 90)
+			(at 114.3 172.212 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7706,7 +7717,7 @@
 				)
 			)
 		)
-		(property "MPN" "C158612"
+		(property "MPN" "C473585"
 			(at 114.3 170.18 0)
 			(hide yes)
 			(show_name no)
@@ -7908,6 +7919,7 @@
 		(uuid "51177187-5679-4f54-91f6-c1f79d9e9a99")
 		(property "Reference" "FID2"
 			(at 86.614 116.8978 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9108,8 +9120,19 @@
 				)
 			)
 		)
-		(property "MPN" "C193381"
+		(property "MPN" "C5224289"
 			(at 152.4 114.681 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rotation Offset" "90"
+			(at 161.925 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12247,6 +12270,7 @@
 		(uuid "e1ded7b3-0431-42c3-ad7b-5b130805c1f9")
 		(property "Reference" "FID3"
 			(at 86.614 121.9778 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects

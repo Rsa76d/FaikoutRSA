@@ -1,6 +1,6 @@
 // Generated case design for FaikoutPOE/Faikout.kicad_pcb
 // By https://codeberg.org/RevK/PCBCase
-// Generated 2026-08-27 10:47:38
+// Generated 2026-09-09 12:40:44
 // title:	Faikout
 //
 
@@ -11,9 +11,11 @@ lipa=0;
 lipt=2;
 casewall=3.000000;
 casebottom=3.000000;
-module casebottomscad(){};
+casebottomadd=false;
+casebottomsub=false;
 casetop=12.000000;
-module casetopscad(){};
+casetopadd=false;
+casetopsub=false;
 casetopbump=0.000000;
 bottomthickness=0.000000;
 topthickness=0.000000;
@@ -899,7 +901,7 @@ if(part)
 module bottom_text(offset=0)
 {
 minkowski(){translate([0.00,-2.50,-casebottom-offset-1])rotate(0.00)scale([-1,1])linear_extrude(1)text("shop.revk.uk",size=3.00,halign="center",valign="center",font="OCRB");cylinder(d1=0.38,d2=0,h=0.38,$fn=6);}
-minkowski(){translate([0.00,2.50,-casebottom-offset-1])rotate(0.00)scale([-1,1])linear_extrude(1)text("2026-08-27",size=3.00,halign="center",valign="center",font="OCRB");cylinder(d1=0.38,d2=0,h=0.38,$fn=6);}
+minkowski(){translate([0.00,2.50,-casebottom-offset-1])rotate(0.00)scale([-1,1])linear_extrude(1)text("2026-09-03",size=3.00,halign="center",valign="center",font="OCRB");cylinder(d1=0.38,d2=0,h=0.38,$fn=6);}
 }
 
 module top_text(offset=0)
@@ -1088,14 +1090,14 @@ module bottom_side_hole()
 	}
 }
 
-module parts_space()
+module parts_space(part=true,hole=true,block=false,punch=true)
 {
 	minkowski()
 	{
 		union()
 		{
-			parts_top(part=true,hole=true,punch=true);
-			parts_bottom(part=true,hole=true,punch=true);
+			parts_top(part,hole,block,punch);
+			parts_bottom(part,hole,block,punch);
 		}
 		sphere(r=margin+0.03,$fn=6);
 	}
@@ -1205,14 +1207,18 @@ module top()
 			{
 				top_body();
 				top_edge();
+				if(casetopadd)casetopadd();
 			}
 			parts_space();
 			pcb_pos()pcb(height,r=margin);
 			top_text();
+			if(casetopsub)casetopsub();
 		}
-		difference()
+		if(casetopadd) difference()
 		{
-			casetopscad();
+			casetopadd();
+			parts_space(hole=false,punch=false);
+			pcb_pos()pcb(height,r=margin);
 			top_text();
 		}
 		if(casetopbump)difference()
@@ -1220,6 +1226,7 @@ module top()
 			top_bump();
                         parts_space();
                         top_text(casetopbump);
+			if(casetopsub)casetopsub();
 		}
 	}
 }
@@ -1279,16 +1286,21 @@ module bottom()
 			{
         			bottom_body();
         			bottom_edge();
+				if(casebottomadd)casebottomadd();
 			}
 			parts_space();
 			pcb(height,r=margin);
 			bottom_text();
+			if(casebottomsub)casebottomsub();
 		}
-		difference()
+		if(casebottomadd) difference()
 		{
-			casebottomscad();
-			bottom_text();
+			casetopadd();
+			parts_space(hole=false,punch=false);
+			pcb(height,r=margin);
+			top_text();
 		}
 	}
 }
+
 translate([0.00,0.00,0]){translate([0,0,casebottom+casetop+casetopbump+pcbthickness+0.1])rotate([180,0,0])top();bottom();}
