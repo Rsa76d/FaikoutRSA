@@ -746,7 +746,7 @@
         "uuid": "46c350bb-7de4-4e81-aafd-4af55e37aab0"
       }
     ],
-    "used_designators": "TP11-13",
+    "used_designators": "TP11-13,U1-2,L1-2,#PWR6,#PWR11,C1-5,C7-11,R4-9",
     "variants": []
   },
   "sheets": [
