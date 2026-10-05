@@ -2237,14 +2237,7 @@ web_status (httpd_req_t *req)
          ws_pkt.payload = (uint8_t *) js;
          ws_pkt.len = strlen (js);
          ws_pkt.type = HTTPD_WS_TYPE_TEXT;
-#if 0
-         // If the async send fails the peer is gone; close the session so its socket slot is freed
-         // rather than leaked (a leaked slot is invisible to the select() loop forever).
-         if (httpd_ws_send_frame_async (req->handle, fd, &ws_pkt))
-            httpd_sess_trigger_close (req->handle, fd);
-#else // See #1074
-         httpd_ws_send_frame_async (req->handle, fd, &ws_pkt);
-#endif
+         httpd_ws_send_frame_async (req->handle, fd, &ws_pkt);  // See #1074 for why we don't check and call close
          free (js);
       }
    }
