@@ -16360,6 +16360,17 @@
 				)
 			)
 		)
+		(property "Rotation Offset" "180"
+			(at 176.53 71.12 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "4"
 			(uuid "e00b100f-312b-4dac-af9d-7fe21b706c00")
 		)
@@ -21647,7 +21658,7 @@
 				)
 			)
 		)
-		(property "Footprint" "RevK:QFN-32-1EP_5x5mm_P0.5mm_EP3.7x3.7mm"
+		(property "Footprint" "RevK:QFN-32-1EP_5x5mm_P0.5mm_EP3.7x3.7mm-hot"
 			(at 139.446 36.068 0)
 			(hide yes)
 			(show_name no)

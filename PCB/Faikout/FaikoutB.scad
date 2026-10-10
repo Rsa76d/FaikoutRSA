@@ -1,6 +1,6 @@
 // Generated case design for Faikout/Faikout.kicad_pcb
 // By https://codeberg.org/RevK/PCBCase
-// Generated 2026-09-22 14:01:21
+// Generated 2026-10-09 09:47:37
 // title:	Faikout
 // company:	Adrian Kennard, Andrews & Arnold Ltd
 //
@@ -159,7 +159,7 @@ module part_J1(part=true,hole=false,block=false,punch=false)
 {
 translate([6.055000,5.000000,1.600000])rotate([0,0,-90.000000])m10(part,hole,block,punch,casetop,05); // J1
 };
-module FID3(){translate([-9.750000,-10.000000,1.600000])children();}
+module FID3(){translate([-9.750000,-10.000000,1.600000])rotate([0,0,180.000000])children();}
 module part_FID3(part=true,hole=false,block=false,punch=false)
 {
 };
@@ -431,7 +431,7 @@ if(hole)
 module bottom_text(offset=0)
 {
 minkowski(){translate([0.00,-2.50,-casebottom-offset-1])rotate(0.00)scale([-1,1])linear_extrude(1)text("shop.revk.uk",size=3.00,halign="center",valign="center",font="OCRB");cylinder(d1=0.38,d2=0,h=0.38,$fn=6);}
-minkowski(){translate([0.00,2.50,-casebottom-offset-1])rotate(0.00)scale([-1,1])linear_extrude(1)text("2026-09-22",size=3.00,halign="center",valign="center",font="OCRB");cylinder(d1=0.38,d2=0,h=0.38,$fn=6);}
+minkowski(){translate([0.00,2.50,-casebottom-offset-1])rotate(0.00)scale([-1,1])linear_extrude(1)text("2026-10-03",size=3.00,halign="center",valign="center",font="OCRB");cylinder(d1=0.38,d2=0,h=0.38,$fn=6);}
 }
 
 module top_text(offset=0)
