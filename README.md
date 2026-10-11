@@ -1,6 +1,6 @@
 ## Support
 
-You can support this project in many ways, including testing and diagnostics, merge requests, clearly described issues and suggestions, and [buying Faikout boards from us](https://lectronz.com/a/mrlHiG1i). Thank you all for your support. This is open source so others can make and sell (with trademark restrictions). AI based bug reprts or MRs will get yo blocked.
+You can support this project in many ways, including testing and diagnostics, merge requests, clearly described issues and suggestions, and [buying Faikout boards from us](https://shop.revk.uk?mrlHiG1i). Thank you all for your support. This is open source so others can make and sell (with trademark restrictions). AI based bug reprts or MRs will get yo blocked.
 
 # ESP32-Faikout
 
@@ -54,7 +54,7 @@ Design now works, and boards on order.
 
 ## PCB and case
 
-Buy from [shop.revk.uk](https://lectronz.com/a/mrlHiG1i). Also available from a third party in Australia eBay.
+Buy from [shop.revk.uk](https://shop.revk.uk?mrlHiG1i). Also available from a third party in Australia eBay.
 
 <img src=PCB/Faikout/Faikout.png width=25%><img src=PCB/Faikout/Faikout-bottom.png width=25%><img src=PCB/Faikout/FaikoutC.png width=25%>
 
