@@ -29,6 +29,17 @@
 esptool.py -p COM3 write_flash 0x0 Faikout-C3-bootloader.bin 0x8000 Faikout-C3-partition-table.bin 0xd000 Faikout-C3-ota_data_initial.bin 0x10000 Faikout-C3.bin
 ```
 
+## Веб-прошивальник (без встановлення програм)
+
+Автор проєкту радить онлайн-прошивальник: https://adafruit.github.io/Adafruit_WebSerial_ESPTool/
+
+1. Відкрий сторінку в Chrome або Edge на ПК (потрібна підтримка Web Serial).
+2. Підключи плату по USB і натисни **Connect**, вибери порт.
+3. Додай чотири файли з офсетами з таблиці вище (0x0, 0x8000, 0xD000, 0x10000).
+4. Натисни **Program** і дочекайся завершення.
+
+На Android Web Serial у Chrome, імовірно, не працює, тож прошивай з ПК.
+
 ## Нюанси
 
 - Усі чотири файли бери з однієї папки (`release`), не змішуй з `beta`.
