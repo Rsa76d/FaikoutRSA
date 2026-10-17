@@ -1,7 +1,7 @@
 # Прошивка Faikout на ESP32-C3
 
 Джерело файлів: https://codeberg.org/RevK/ESP32-Faikout/src/branch/main/ESP/release
-Офсети взяті з README автора (для S1 bootloader на 0x1000, для S3 на 0x0; для C3 на 0x0).
+Офсети взяті з README автора (для S1 bootloader на 0x1000, для S3 на 0x0). Для C3 bootloader на 0x0 за стандартом ESP-IDF, у README автора цього чипа немає.
 
 ## Що означають файли
 
@@ -23,7 +23,7 @@
 
 ## Офсети для інших плат
 
-Відрізняється лише адреса bootloader (за README автора):
+Відрізняється лише адреса bootloader. Для S1 і S3 це за README автора, для C3 (0x0) це стандартна адреса ESP-IDF: у README й manifest автора цього чипа немає, тож за можливості звір з виводом esptool:
 
 | Чип | bootloader | partition-table | ota_data_initial | прошивка |
 |---|---|---|---|---|
